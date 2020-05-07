@@ -1,0 +1,157 @@
+.content-page
+  padding-top: 72px
+.bigger-text
+  font-size 100px
+  line-height 100px
+  @media (max-width 500px)
+    font-size 65px
+    line-height 65px
+  @media (max-width 500px)
+    font-size 50px
+    line-height 50px
+.plans
+  padding-bottom: 140px
+  @media (max-width 500px)
+    padding-bottom: 90px
+  &__item
+    padding: 40px 40px 0 40px
+    border-radius: 5px
+    border: 1px solid #cecece;
+    background-color: #ffffff
+    height 100%
+    transition all 0.25s ease
+    cursor default
+    @media (max-width 768px)
+      margin 0 auto
+      padding 40px
+    @media (max-width 500px)
+      padding 40px 15px
+
+    &_gold
+      position relative
+      box-shadow: 0 20px 17px 3px rgba(37, 37, 37, 0.1);
+      border: 4px solid #d6bf6d;
+      &:after
+        content ''
+        display: block
+        position absolute
+        top 0
+        right 0
+        height: 0
+        border-top: 50px solid #e6d56d
+        border-left: 50px solid transparent;
+      &:before
+        content '*'
+        position absolute
+        z-index 2
+        color #fff
+        font-size 26px
+        height 15px
+        width 15px
+        top 2px
+        right 5px
+
+    &:hover
+      box-shadow: 0 20px 17px 3px rgba(37, 37, 37, 0.2);
+  &-title
+    font-size: 30px
+  &-price
+    text-transform uppercase
+    font-size: 100px
+    font-weight 700
+    line-height 1
+  &-con
+    font-size: 20px
+  &-txt
+    font-size 1.05rem
+    &_grey
+      color: #ababab
+  ul
+    border-top: 1px solid #cecece;
+    padding 20px 0
+    margin 25px 20px 0
+    li
+      display: flex
+      &:not(:last-child)
+        margin-bottom: 15px
+      .check
+        padding-top: 4px
+        min-width 25px
+.pricing-banner
+  height 560px
+  display: flex
+  align-items center
+  background url('img/pricing.png') no-repeat center;
+  background-size cover
+  &__title
+    font-size 50px
+    color #fff
+  @media (max-width 1024px)
+    text-align center
+  @media (max-width 500px)
+    height 400px
+    &__title
+      font-size 35px
+
+.faq
+  padding-top: 150px
+  padding-bottom: 100px
+  @media (max-width 768px)
+    padding-top: 100px
+    padding-bottom: 50px
+  @media (max-width 500px)
+    padding-top: 50px
+  &__item
+    padding 30px
+    border-radius: 5px;
+    border: 1px solid #cecece
+    .faq-title
+      position relative
+      font-size 1.2rem
+      color $dirty-purple
+      cursor pointer
+      padding-right: 20px;
+      @media (max-width 500px)
+        font-size 1.05rem
+      &:before,
+      &:after
+        content ''
+        position absolute
+        right 0
+        top 10px
+        display: block
+        width 14px
+        height 2px
+        background-color #000
+        transition all 0.25s ease
+      &:after
+        right 6px
+        top 4px
+        height 14px
+        width 2px
+      &.active
+        &:after
+          transform rotate(90deg)
+    .faq-cont
+      display: none
+      &.active
+        display: block
+    &.active
+      box-shadow: 3px 5px 13px rgba(0, 0, 0, 0.47);
+.upgrade
+  padding-top: 20px
+  padding-bottom: 150px
+  &__button
+    display: flex
+    flex-wrap wrap
+    align-items center
+    justify-content center
+    span
+      margin-right: 45px
+  @media (max-width 768px)
+    padding-bottom: 100px
+  @media (max-width 500px)
+    padding-bottom: 80px
+    &__button span
+      margin-bottom: 20px
+      margin-right: 0

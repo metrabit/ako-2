@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Try ako</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="js/chosen/chosen.min.css"/>
+    <script src="js/chosen/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/tags-input/jquery.tagsinput.js"></script>
+    <link type="text/css" rel="stylesheet" href="js/tags-input/jquery.tagsinput.css"/>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper wrapper_dashboard">
+            <div class="sidebar"><a class="sidebar__logo" href="#"><img src="img/logo.png" alt="logo"/></a>
+              <ul class="sidebar__nav">
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-tachometer-alt"></i></span><span class="menu-txt">Home</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="far fa-calendar-alt"></i></span><span class="menu-txt">Appointment</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-users"></i></span><span class="menu-txt">Request</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="far fa-envelope"></i></span><span class="menu-txt">Messages</span></a></li>
+                <li class="active"><a href="#"><span class="menu-icon"><i class="far fa-heart"></i></span><span class="menu-txt">Favourites</span></a></li>
+                <li><a href="#"><span class="menu-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22">
+                        <path data-name="layer2" d="M49 24a14.7 14.7 0 0 1 0 22.1m5.5-27a20.6 20.6 0 0 1 .1 31.9M30 24l-9 8h-6a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h6l9 8z" fill="none" stroke="#5e3d55" stroke-miterlimit="10" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1" d="M2 11v40a5 5 0 0 0 5 5h35V16H7A5 5 0 0 1 7 6h31v10" fill="none" stroke="#5e3d55" stroke-miterlimit="10" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"></path>
+                      </svg></span><span class="menu-txt">Jobs</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-file-alt"></i></span><span class="menu-txt">Invoices</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-cog"></i></span><span class="menu-txt">Settings</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="far fa-question-circle"></i></span><span class="menu-txt">Help</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-sign-out-alt"></i></span><span class="menu-txt">Switch Account</span></a></li>
+              </ul>
+            </div>
+      <div class="page">
+        <header class="header-dash">
+          <div class="header-dash__left">
+            <div class="header-dash-icon active"><span></span><span></span><span></span></div>
+            <div class="header-title">Available Jobs</div>
+          </div>
+          <div class="header-dash__right">
+            <div class="header-menu dropdown">
+              <button class="button drop-btn dropdown__trig">
+                <div class="drop-btn__name">John Doe</div>
+                <div class="drop-btn__img"><img src="img/img-1.png" alt="avatar"/></div>
+              </button>
+              <div class="header-menu__cont dropdown__cont">
+                <ul class="header-menu__list">
+                  <li><a href="#">Edit profile</a></li>
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container container_dash">
+          <div class="m-t-70">
+            <button class="button button_green" data-modal="try-ako">Try ako</button>
+          </div>
+          <div class="m-t-70">
+            <button class="button button_green" data-modal="payment">Payment</button>
+          </div>
+          <div class="m-t-70">
+            <button class="button button_green" data-modal="upgrade">Upgrade</button>
+          </div>
+          <div class="m-t-70">
+            <button class="button button_green" data-modal="flagging">Flagging</button>
+          </div>
+          <section class="section-def m-t-70">
+            <h3 class="section-title m-b-30">Billing and Subscription</h3>
+            <div class="columns is-multiline">
+              <div class="column">
+                <div class="billing-item active">
+                  <div class="billing-item__txt"><span>Current</span><span>Plan Premium</span></div>
+                  <div class="billing-item__img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="46" viewBox="0 0 42 46">
+                      <g>
+                        <g>
+                          <path fill="#789429" d="M42 2.789v35.51c0 .26-.105.51-.293.694l-6.834 6.72a1.009 1.009 0 0 1-.707.287H11.83c-1.565 0-2.837-1.251-2.837-2.79V32.474C3.806 31.013 0 26.31 0 20.75S3.806 10.49 8.992 9.031V2.788C8.992 1.25 10.264 0 11.829 0h27.334C40.727 0 42 1.251 42 2.789zm-31.01 0v2.964h29.012V2.79a.832.832 0 0 0-.839-.824H11.83a.832.832 0 0 0-.839.824zm1.409 28.187c5.734 0 10.4-4.587 10.4-10.225s-4.666-10.224-10.4-10.224c-5.735 0-10.4 4.587-10.4 10.224 0 5.638 4.665 10.225 10.4 10.225zm-.57 13.059h21.338v-3.93c0-1.538 1.272-2.79 2.837-2.79H40V7.719H10.99v.923c.462-.051.932-.079 1.408-.079 3.796 0 7.198 1.686 9.474 4.336h5.993c.552 0 1 .44 1 .982a.99.99 0 0 1-1 .983h-4.614a11.95 11.95 0 0 1 1.512 4.98h3.102c.552 0 1 .44 1 .983a.99.99 0 0 1-1 .982H24.75a11.958 11.958 0 0 1-1.584 4.981h4.7c.551 0 .999.44.999.983a.99.99 0 0 1-1 .982h-6.122a12.463 12.463 0 0 1-9.344 4.187c-.477 0-.947-.028-1.409-.08v10.35c0 .454.376.824.839.824zm26.76-4.754h-2.585a.832.832 0 0 0-.839.824v2.54zm-7.797-25.4a.99.99 0 0 1 1-.983h3.317c.552 0 1 .44 1 .982a.99.99 0 0 1-1 .983h-3.318a.99.99 0 0 1-1-.983zm0 6.945a.99.99 0 0 1 1-.983h3.317c.552 0 1 .44 1 .983a.99.99 0 0 1-1 .982h-3.318a.99.99 0 0 1-1-.982zm0 6.946a.99.99 0 0 1 1-.983h3.317c.552 0 1 .44 1 .983a.99.99 0 0 1-1 .982h-3.318a.99.99 0 0 1-1-.982zm-5.03 7.927a.99.99 0 0 1-.999-.982.99.99 0 0 1 1-.982h9.346c.552 0 1 .44 1 .982a.99.99 0 0 1-1 .982zm-5.606-17.486l-8.842 8.692c-.328.323-.764.5-1.229.5-.464 0-.9-.177-1.229-.5l-4.215-4.144a1.69 1.69 0 0 1 0-2.416l1.22-1.2c.327-.322.764-.5 1.228-.5.464 0 .9.178 1.229.5l1.767 1.738 6.394-6.285c.329-.323.765-.5 1.23-.5.464 0 .9.177 1.228.5l1.22 1.198a1.69 1.69 0 0 1 0 2.417zm-1.597-1.209l-.85-.836-6.917 6.8a1.011 1.011 0 0 1-1.413 0l-2.29-2.252-.851.837 3.847 3.782z"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="billing-item">
+                  <div class="billing-item__txt"><span>Current bill</span><span>total $5.99</span></div>
+                  <div class="billing-item__img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="46" viewBox="0 0 42 46">
+                      <g>
+                        <g>
+                          <path fill="#583b53" d="M42 23v18.328C42 43.904 39.86 46 37.231 46H4.769c-2.63 0-4.768-2.096-4.768-4.672V.923A.887.887 0 0 1 .274.259a.93.93 0 0 1 1.29.005l2.599 2.545L6.76.264a.93.93 0 0 1 1.297 0l2.598 2.545L13.253.264a.93.93 0 0 1 1.297 0l2.597 2.545L19.745.264a.93.93 0 0 1 1.297 0l2.598 2.545L26.238.264a.93.93 0 0 1 1.297 0l2.597 2.545L32.73.264a.931.931 0 0 1 1-.195c.342.14.566.467.566.83v21.203h6.787c.506 0 .917.402.917.898zM4.769 44.203h28.708a4.588 4.588 0 0 1-1.014-2.875V23.025 3.068L30.78 4.715a.93.93 0 0 1-1.297 0L26.887 2.17l-2.598 2.545a.93.93 0 0 1-1.297 0L20.394 2.17l-2.598 2.545a.93.93 0 0 1-1.297 0L13.901 2.17l-2.597 2.545a.93.93 0 0 1-1.297 0L7.409 2.17 4.81 4.715a.93.93 0 0 1-1.297 0l-1.68-1.646v38.26c0 1.584 1.317 2.874 2.935 2.874zm35.397-2.875v-17.43h-5.869v17.43c0 1.585 1.316 2.875 2.934 2.875s2.935-1.29 2.935-2.875zM20.633 17.454c0 1.464-1.09 2.7-2.568 3.069v.733c0 .496-.41.898-.917.898a.908.908 0 0 1-.917-.898v-.733c-1.478-.369-2.568-1.605-2.568-3.07 0-.495.411-.898.917-.898.507 0 .918.403.918.899 0 .763.74 1.384 1.65 1.384.91 0 1.65-.62 1.65-1.384 0-.764-.74-1.385-1.65-1.385-1.921 0-3.485-1.427-3.485-3.181 0-1.465 1.09-2.7 2.568-3.069V9.21c0-.496.41-.898.917-.898.507 0 .917.402.917.898v.61c1.478.368 2.568 1.603 2.568 3.068 0 .496-.41.898-.917.898a.908.908 0 0 1-.917-.898c0-.764-.74-1.385-1.65-1.385-.91 0-1.651.621-1.651 1.385 0 .763.74 1.384 1.65 1.384 1.921 0 3.485 1.428 3.485 3.182zm6.645-2.283c0 .496-.41.898-.917.898h-1.787a.908.908 0 0 1-.917-.898c0-.496.41-.898.917-.898h1.787c.507 0 .917.402.917.898zm-16.639 0c0 .496-.41.898-.917.898H7.935a.908.908 0 0 1-.917-.898c0-.496.41-.898.917-.898h1.787c.507 0 .917.402.917.898zm17.103 9.986c0 .496-.41.898-.917.898H12.297a.908.908 0 0 1-.917-.898c0-.496.41-.898.917-.898h14.528c.507 0 .917.402.917.898zm-19.354 0a.896.896 0 0 1-.269.635.934.934 0 0 1-1.297 0 .896.896 0 0 1-.268-.635c0-.236.098-.468.268-.635a.934.934 0 0 1 1.297 0c.17.167.269.399.269.635zm19.354 5.93c0 .496-.41.898-.917.898H12.297a.908.908 0 0 1-.917-.899c0-.496.41-.898.917-.898h14.528c.507 0 .917.402.917.898zm-19.354 0a.897.897 0 0 1-.269.635.934.934 0 0 1-1.297 0 .896.896 0 0 1-.268-.636c0-.236.098-.468.268-.635a.934.934 0 0 1 1.297 0c.17.167.269.4.269.635zm19.354 5.929c0 .496-.41.898-.917.898H12.297a.908.908 0 0 1-.917-.898c0-.496.41-.898.917-.898h14.528c.507 0 .917.402.917.898zm-19.354 0a.896.896 0 0 1-.269.635.934.934 0 0 1-1.297 0 .895.895 0 0 1-.268-.635c0-.236.098-.468.268-.635a.933.933 0 0 1 1.297 0c.17.167.269.399.269.635z"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="billing-item disabled">
+                  <div class="billing-item__txt"><span>Next Due Payment</span><span>03/04/2019</span></div>
+                  <div class="billing-item__img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="37" viewBox="0 0 37 37">
+                      <g>
+                        <g>
+                          <path fill="#583b53" d="M37 6.551v27.365A3.082 3.082 0 0 1 33.917 37H3.084A3.083 3.083 0 0 1 0 33.916V6.551A3.082 3.082 0 0 1 3.084 3.47h5.01V1.156a1.156 1.156 0 1 1 2.312 0V3.47h6.938V1.156a1.156 1.156 0 1 1 2.312 0V3.47L26 3l.594-1.844a1.156 1.156 0 1 1 2.312 0L29 3h5c1.703 0 3 1.848 3 3.551zM35 6c0-.425-.658-.219-1.083-.219h-5.01v2.313a1.156 1.156 0 1 1-2.313 0V5.78h-6.938v2.313a1.156 1.156 0 0 1-2.312 0V5.78h-6.938v2.313a1.156 1.156 0 0 1-2.312 0V5.78h-5.01C2.658 5.781 2 5.575 2 6v28c0 .426.574 1 1 1h31c.425 0 1-.574 1-1zM8.094 13.875h4.625v3.469H8.094zm0 5.781h4.625v3.469H8.094zm0 5.781h4.625v3.47H8.094zm8.093 0h4.625v3.47h-4.625zm0-5.78h4.625v3.468h-4.625zm0-5.782h4.625v3.469h-4.625zm8.094 11.562h4.625v3.47h-4.625zm0-5.78h4.625v3.468h-4.625zm0-5.782h4.625v3.469h-4.625z"></path>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="column">
+                <div class="billing-buttons">
+                  <button class="button button_pink is-fullwidth">Update Payment Info</button>
+                  <div class="m-t-10">
+                    <button class="button button_pink is-fullwidth">Billing History</button>
+                  </div>
+                  <div class="m-t-10">
+                    <button class="button button_inverse-purple is-fullwidth">Reddem Promo Code</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="downgrade-block">
+              <div class="downgrade-block__card">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="24" viewBox="0 0 36 24">
+                  <g>
+                    <g>
+                      <path fill="#583b53" d="M36 2.87V21.13a2.874 2.874 0 0 1-2.87 2.87H2.87A2.874 2.874 0 0 1 0 21.13V2.912C0 1.334 1.315 0 2.87 0h30.26A2.874 2.874 0 0 1 36 2.87zM35 21V3c0-.847-1.153-2-2-2H3c-.833 0-2 1.145-2 2v18c0 .847 1.153 2 2 2h30c.847 0 1.666-1.024 1.666-1.871zm-11.032-9.037a.667.667 0 0 1-.668.667 3.96 3.96 0 0 1-3.954-3.955A3.96 3.96 0 0 1 23.3 4.72a3.96 3.96 0 0 1 3.955 3.955c0 .792-.235 1.553-.668 2.2.41.266.898.421 1.423.421a2.623 2.623 0 0 0 2.62-2.62 2.623 2.623 0 0 0-2.62-2.621.667.667 0 0 1 0-1.335 3.96 3.96 0 0 1 3.954 3.955 3.96 3.96 0 0 1-3.954 3.955 3.96 3.96 0 0 1-3.955-3.955c0-.768.221-1.514.64-2.157l.028-.042a2.604 2.604 0 0 0-1.423-.421 2.623 2.623 0 0 0-2.62 2.62 2.623 2.623 0 0 0 2.62 2.621c.369 0 .668.299.668.667zm1.687-4.436a2.612 2.612 0 0 0 0 2.298 2.612 2.612 0 0 0 0-2.298zm-12.982-.42v3.106c0 1.353-1.1 2.454-2.453 2.454H5.134a2.457 2.457 0 0 1-2.454-2.454V7.107c0-1.353 1.101-2.454 2.454-2.454h5.086c1.353 0 2.453 1.101 2.453 2.454zm-1.416 3.526H9.294a.667.667 0 0 1 0-1.334h2.045V7.987H9.294a.667.667 0 1 1 0-1.334h1.948a1.12 1.12 0 0 0-1.022-.665H5.134a1.12 1.12 0 0 0-1.022.665h1.915a.667.667 0 1 1 0 1.334H4.015V9.3h2.012a.667.667 0 0 1 0 1.334h-1.93c.167.41.568.7 1.037.7h5.086c.468 0 .87-.29 1.037-.7zM5.356 17.35V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0zm3.316 0V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0zm3.316 0V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0zm3.316 0V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0zm3.339 0V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0zm3.316 0V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0zm3.316 0V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0zm3.316 0V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0zm3.387 0V18.6a.667.667 0 0 1-1.334 0v-1.252a.667.667 0 0 1 1.334 0z"></path>
+                    </g>
+                  </g>
+                </svg><span>Mastercard ....  .... ....  4501</span>
+              </div>
+              <div class="downgrade-block__btn">
+                <button class="button button_small-purple">Downgrade</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+      <div class="modal modal_try-ako modal-block">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <h3 class="modal-block__title modal-block__title_left is-uppercase">Try AKO for work free for 30 days!</h3>
+          <div class="modal-card-body">
+            <div class="columns is-vcentered is-variable is-1">
+              <div class="column is-narrow">
+                <div class="subtitle-def has-text-weight-bold">Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit.</div>
+                <ul class="check-list">
+                  <li>
+                    <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Donec ut nulla ac erat accumsan posuere ac sed mi.</span>
+                  </li>
+                  <li>
+                    <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Vivamus sit amet magna sit amet dolor blandit viverra.</span>
+                  </li>
+                  <li>
+                    <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Nulla at erat eget pretium sit amet at ipsum.</span>
+                  </li>
+                  <li>
+                    <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Fusce tristique urna et lacinia porttitor.</span>
+                  </li>
+                  <li>
+                    <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Ut lobortis dui quis dolor viverra, est fermentum.</span>
+                  </li>
+                  <li>
+                    <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Aliquam aliquam odio vel purus pellentesque convallis.</span>
+                  </li>
+                </ul>
+                <div class="m-t-40">
+                  <button class="button button_green">Try it free for 30 days</button>
+                </div>
+                <div class="m-t-30 help-cont help-cont_try">Cancel any time. We'll remind you 3 days before your trial ends.</div>
+              </div>
+              <div class="column mix-images"><img src="img/mix-images.png" alt="img"/></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_payment modal-block">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <h3 class="modal-block__title is-uppercase has-text-centered">Upgrade to AKO for work<br> and get 30 days free</h3>
+          <div class="modal-card-body">
+            <ul class="check-list">
+              <li>
+                <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Your first 30 days are free, cancel anytime</span>
+              </li>
+              <li>
+                <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Your first bill will be scheduled for june 1, 2019</span>
+              </li>
+              <li>
+                <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">We will remind you 3 dats before your trial ends</span>
+              </li>
+            </ul>
+            <div class="payment-plan">
+              <div class="columns is-multiline">
+                <div class="column is-full">
+                  <label class="label-button">
+                    <input class="label-button__input" type="radio" name="plan" checked="checked"/>
+                    <div class="label-button__cont label-button__cont_plan">Monthly - $12.95 / month</div>
+                  </label>
+                </div>
+                <div class="column is-full">
+                  <label class="label-button">
+                    <input class="label-button__input" type="radio" name="plan"/>
+                    <div class="label-button__cont label-button__cont_plan">Yearly - $9.95/ month<span>$119.40 billed yearly</span>
+                      <div class="label-button__discount">SAVE 20%</div>
+                    </div>
+                  </label>
+                </div>
+              </div>
+            </div>
+            <div class="payment-block m-t-30">
+              <div class="columns is-multiline is-variable is-1">
+                <div class="column is-full">
+                  <div class="control">
+                    <input class="input input_def input_plan" type="text" placeholder="Credit card number"/>
+                  </div>
+                </div>
+                <div class="column is-half">
+                  <div class="control">
+                    <input class="input input_def input_plan" type="text" placeholder="MM/YY"/>
+                  </div>
+                </div>
+                <div class="column is-half">
+                  <div class="control">
+                    <input class="input input_def input_plan" type="text" placeholder="CVC"/>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="m-t-30 has-text-centered">
+              <button class="button button_pr button_pr-small">Claim my free trial</button>
+            </div>
+            <div class="m-t-30 help-cont help-cont_payment">Your payments are 128-bit SSL encrypted, which means they,re 100% safe with us.</div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_upgrade modal-block">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <h3 class="modal-block__title has-text-centered"><span>Upgrade to AKO Premium to unlock unlimited features</span>
+            <div class="modal-block__subtitle m-t-10">Subscriptions are billed or monthly. All plans come with a 14-day free trial</div>
+          </h3>
+          <div class="modal-card-body">
+            <div class="has-text-centered is-size-5 is-size-6-mobile m-t-15">
+              <p>Service requests quota expired for this period.</p>
+              <p>Upgrade to AKO Premium to get access to unlimited service requests.</p><a class="m-t-10 underline-link" href="#">LEARN MORE</a>
+            </div>
+            <div class="premium-includes">
+              <div class="upgrade-title">AKO Premium includes</div>
+              <div class="m-t-15">
+                <div class="columns is-gapless">
+                  <div class="column is-narrow">
+                    <ul class="check-list">
+                      <li>
+                        <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Unlimited Service Requests</span>
+                      </li>
+                      <li>
+                        <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Access to Posted Jobs</span>
+                      </li>
+                      <li class="hide-more hide-more_hide">
+                        <div class="check"></div><a class="plans-txt" href="#">More</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="column">
+                    <ul class="check-list check-list_pl">
+                      <li>
+                        <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Search Tags</span>
+                      </li>
+                      <li>
+                        <div class="check"><img src="img/check.png" alt="check"/></div><span class="plans-txt">Freelancer Support</span>
+                      </li>
+                      <li class="hide-more hide-more_show">
+                        <div class="check"></div><a class="plans-txt" href="#">More</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="items-between m-t-30">
+              <div>
+                <div class="has-text-weight-bold is-size-3">Total: $9.99/mo</div>
+                <div class="has-text-weight-bold is-size-6 has-text-grey-dark">($60 billed annually)</div>
+              </div>
+              <button class="button button_green button_green_sm has-text-weight-bold">UPGRADE</button>
+            </div>
+            <div class="m-t-20 text-center-xs"><a class="help-cont" href="#">Maybe later</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="modal modal_flagging modal-block">
+        <div class="modal-background"></div>
+        <div class="modal-content">
+          <h3 class="modal-block__title has-text-centered">   Why are you flagging this?</h3>
+          <div class="modal-card-body">
+            <div class="flagging-list">
+              <label class="label-radio"><span>Looks fake or is a duplicate</span>
+                <input type="radio" name="question1"/>
+                <div class="check"></div>
+              </label>
+              <label class="label-radio"><span>Has stolen or plagiarized content</span>
+                <input type="radio" name="question1"/>
+                <div class="check"></div>
+              </label>
+              <label class="label-radio"><span>Lists contact information</span>
+                <input type="radio" name="question1"/>
+                <div class="check"></div>
+              </label>
+              <label class="label-radio"><span>It’s inappropriate for AKO</span>
+                <input type="radio" name="question1"/>
+                <div class="check"></div>
+              </label>
+              <label class="label-radio"><span>Something else</span>
+                <input type="radio" name="question1"/>
+                <div class="check"></div>
+              </label>
+            </div>
+            <div class="m-t-20">
+              <textarea class="textarea textarea_def" placeholder="Additional details"></textarea>
+            </div>
+            <div class="m-t-20 buttons buttons_no-mg">
+              <button class="button button_pr button_pr-small is-fullwidth_xs">submit</button>
+              <button class="button button_pink is-fullwidth_xs">CANCEL</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

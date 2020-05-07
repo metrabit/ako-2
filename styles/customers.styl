@@ -1,0 +1,473 @@
+.w-100
+  width 100%
+.no-bd-right
+  border-top-right-radius 0
+  border-bottom-right-radius 0
+.no-bd-left
+  border-top-left-radius 0
+  border-bottom-left-radius 0
+.border-r
+  border-radius 4px !important
+.d-flex
+  display: flex;
+.align-items-center
+  align-items center
+.ml-auto
+  margin-left: auto
+.icon-calendar
+  position relative
+  svg
+    position absolute
+    top 50%
+    right 10px
+    transform translateY(-50%)
+.mt-40
+  margin-top: 40px
+.mr-10
+  margin-right: 10px
+
+.mr-20
+  margin-right: 20px
+.mr-40
+  margin-right: 40px
+
+.mb-20
+  margin-bottom: 20px
+.add-favourite
+  transition all 0.2s ease
+  &:hover
+    svg
+      fill #EB5757
+
+.cust-title
+  font-size 22px
+  font-weight 700
+.cust-filters
+  padding-top: 150px
+  &__inputs
+    display: flex
+    max-width 880px
+    margin 0 auto
+.btn-search
+  display inline-flex
+  justify-content center
+  align-items center
+  background-color: #5e3d55
+  min-height 50px
+  max-height 50px
+  border: 1px solid #5e3d55
+  &:hover
+    border: 1px solid #5e3d55
+    background-color darken(#5e3d55, 15%)
+
+  &_mob
+    display: none
+.tabs-customer
+  display: flex
+  flex-wrap wrap
+  justify-content center
+  .button
+    display: inline-flex
+    cursor: pointer
+    padding: 10px 15px
+    font-size: 15px
+    color: #5e3d55
+    line-height: 1rem
+    font-weight: 400
+    align-items: center
+    justify-content: center
+    height: 40px
+    border: 1px solid #e9eaec
+    border-radius: 5px
+    background-color: #fff
+    transition: all 0.3s
+    min-height 35px !important
+    &:not(:last-child)
+      margin-right: 10px
+      margin-bottom: 10px
+    &.active
+      position relative
+      box-shadow: -1px 9px 10px rgba(0, 0, 0, 0.03)
+      color: #ffffff
+      background-color: #5e3d55
+      border: 1px solid #5e3d55
+      &:before
+        content: '';
+        position: absolute;
+        left 50%
+        bottom -12px
+        width: 0;
+        height: 0;
+        transform rotate(-90deg) translateY(-50%)
+        border-style: solid;
+        border-width: 8px 10px 8px 0;
+        border-color: transparent #5e3d55 transparent transparent;
+.tabs-customer-cont
+  margin-top: 15px
+  display: flex
+  justify-content center
+.filters-block
+  max-width 880px
+  margin 0 auto
+  margin-top: 30px
+  position relative
+  border-radius 4px
+  border 1px solid #E8E8E8
+  &__title
+    display: flex
+    justify-content center
+    align-items center
+    padding 15px 0
+    background-color #E8E8E8
+    font-weight 700
+    cursor pointer
+    span
+      margin-right: 5px
+    &.active
+      svg
+        transform rotate(180deg)
+  &__cont
+    padding 15px 10px
+    display: none
+
+
+.tags-cont
+  display: flex
+  flex-wrap wrap
+  justify-content center
+  margin-top: 30px
+.tag-button
+  display: inline-flex
+  cursor: pointer
+  &:not(:last-child)
+    margin-right: 10px
+    margin-bottom: 10px
+  &__input
+    display: none
+  &__cont
+    padding: 0 15px
+    font-size: 15px
+    color: #5e3d55
+    line-height: 1rem
+    font-weight: 400
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 40px
+    border: 1px solid #e9eaec
+    border-radius: 5px
+    background-color: #fff
+    transition: all 0.3s
+
+  &:hover &__cont
+    border: 1px solid #5e3d55
+
+
+.tag-button__input:checked + .tag-button__cont
+  box-shadow: -1px 9px 10px rgba(0, 0, 0, 0.03)
+  color: #ffffff
+  background-color: #5e3d55
+  border: 1px solid #5e3d55
+
+
+.customer-radio
+  user-select: none
+  cursor: pointer
+  display: inline-flex
+  align-items: center
+  padding 12px 20px
+  input
+    display: none
+  .check
+    margin-top: -3px
+    margin-right: 10px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    height: 16px
+    width: 16px
+    min-width: 16px
+    border: 2px solid #CBCED5
+    border-radius: 50%
+    &:before
+      content: ''
+      opacity: 0
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background: #5e3d55;
+      transition all .3s
+  input:checked + .check
+    border-color: #e9d4e6;
+    &:before
+      opacity: 1
+
+.freelancer-card
+  position relative
+  padding 40px 50px
+  background-color #ffffff
+  box-shadow: 0 2px 10px #e1e2e6
+  margin-bottom: 50px
+  &__name
+    font-size 22px
+    font-weight 700
+    color #5e3d55
+  &__stars
+    display: flex
+    color #FFCB2B
+    font-size 20px
+    span
+      margin-right: 5px
+  &__tag
+    font-size 14px
+    font-weight 500
+    color #EB5757
+    &_blue
+      color #2F80ED
+  &__desc
+    font-size 14px
+    color #A0A0A2
+    font-weight 500
+    border-bottom 1px solid #A0A0A2
+  &__text
+    font-size 16px
+    color #2C2D30
+  &__loc
+    display: flex
+    align-items center
+    color #A0A0A2
+    font-size 14px
+    svg
+      margin-bottom: 2px
+      margin-right: 10px
+  &__title
+    font-size 20px
+    font-weight 700
+    color #2C2D30
+    margin-bottom: 20px
+.exp-container
+  margin-bottom: 20px
+.exp-block
+  position relative
+  display: flex
+  flex-direction column
+  margin-right 30px
+  padding-right 30px
+  &:not(:last-child)
+    &:before
+      content ''
+      position absolute
+      top 15%
+      right 0
+      width 1px
+      height 70%
+      background-color #000
+
+  &__title
+    color #2C2D30
+    font-size 18px
+    margin-bottom: 10px
+  &__txt
+    color #A0A0A2
+    font-size 16px
+.exp-more
+  color #D86FD3
+  font-size 15px
+  &:hover
+    color darken(#D86FD3, 20%)
+
+.load-more
+  display: flex
+  justify-content center
+  align-items center
+  a
+    color #7B5179
+    text-transform uppercase
+    font-size 14px
+    margin-right: 10px
+.title-purple
+  font-size 48px
+  color #7B5179
+  font-weight 700
+
+.cust-subtitle
+  font-size 16px
+  color #2C2D30
+.question-block
+  margin-top: 80px
+  display: flex
+  margin-bottom: 100px
+  &__left
+    width 25%
+    ul
+      li
+        padding 5px 0
+        a
+          position relative
+          color #2C2D30
+          font-size 18px
+          font-weight 700
+        &.active,
+        &:hover
+          a
+            color #D86FD3
+            &:before
+              content: '→';
+              position: absolute;
+              top: -3px;
+              right: -25px;
+  &__right
+    width 75%
+.question-item
+  display: flex
+  flex-direction column
+  margin-bottom: 10px
+  &.active
+    .question-item__title,
+    .question-item__cont
+      background-color #FAF3F8
+    .question-item__title
+      border-bottom 2px solid #ffffff
+    .question-item__cont
+      display: block
+  &__title
+    position relative
+    padding 15px 60px
+    color #2C2D30
+    font-size 22px
+    background-color #F9F9F9
+
+
+  &__cont
+    display: none
+    background-color #F9F9F9
+    padding 15px 60px
+
+
+.plus-minus-toggle
+  cursor: pointer;
+  height: 21px;
+  position: absolute;
+  top 63%
+  left 20px
+  transform translateY(-50%)
+  width: 21px;
+  &:before,
+  &:after
+    background: #7B5179;
+    content: '';
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 21px;
+    transition: transform 500ms ease;
+
+  &:after
+    transform-origin: center;
+
+  &.collapsed
+    &:after
+      transform: rotate(90deg)
+
+    &:before
+      transform: rotate(180deg)
+@media (max-width: 768px)
+  .exp-more
+    display: flex
+    justify-content center
+  .md-flex
+    display: flex
+    justify-content center
+@media (max-width: 500px)
+
+  .cust-filters__inputs
+    flex-wrap wrap
+    input
+      margin-bottom: 10px
+  .no-bd-right
+    border-top-right-radius 4px
+    border-bottom-right-radius 4px
+  .no-bd-left
+    border-top-left-radius 4px
+    border-bottom-left-radius 4px
+  .btn-search
+    display: none
+    &_mob
+      display: inline-flex
+      span
+        color #ffffff
+        text-transform uppercase
+        margin-right: 10px
+  .filters-block
+    margin-top: 0
+  .cust-title
+    color #7B5179
+    font-size 32px
+  .align-items-center
+    flex-wrap wrap
+    justify-content: center;
+  .mr-40
+    margin-right: 0
+
+  .add-favourite
+    position absolute
+    top 40px
+    right 35px
+
+  .col-reverse-md
+    flex-direction: column-reverse;
+  .freelancer-card__stars
+    color #D86FD3
+    font-size 30px
+  .freelancer-card__loc
+    justify-content  center
+  .tabs-customer .button.active:before
+    display: none
+  .cust-user
+    display: flex
+    align-items center
+    justify-content center
+  .md-flex
+    flex-wrap wrap
+    .mr-20
+      margin-right: 0
+      margin-bottom: 20px
+  .exp-container
+    flex-wrap wrap
+  .exp-block
+    margin-right 0
+    padding-right 0
+    border-bottom 1px solid #A0A0A2
+    width 100%
+    padding-bottom: 10px
+    margin-bottom: 10px
+    &:not(:last-child)
+      &:before
+        display: none
+
+  .question-block
+    margin-top: 40px
+    flex-wrap wrap
+    &__left,
+    &__right
+      width 100%
+    &__left
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px
+      ul
+        li
+          &.active,
+          &:hover
+            a
+              color #D86FD3
+              &:before
+                content: '→';
+                position: absolute;
+                top: -5px;
+                right: -25px;
+                transform rotate(90deg)
+
+

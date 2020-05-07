@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+html(lang="en")
+    - var title = 'customers'
+    include ../blocks/head
+    body
+        .wrapper
+            include ../blocks/header
+            +header_customer
+            section.cust-filters
+                .container
+                    .cust-filters__inputs
+                        div.w-100
+                            input(type='text' placeholder='Service, Freelancer, Name').input.input_def.no-bd-right
+                        div.w-100.icon-calendar
+                            input(type='date' placeholder='DD / MM / YY').input.input_def.no-bd-right.no-bd-left
+                            svg(xmlns='http://www.w3.org/2000/svg', width='14', height='14', viewBox='0 0 14 14')
+                                g(fill='#6A7084', fill-rule='nonzero')
+                                    path(d='M13.75.933H12v-.7C12 .104 11.888 0 11.75 0H10c-.138 0-.25.104-.25.233v.7h-5.5v-.7C4.25.104 4.138 0 4 0H2.25C2.112 0 2 .104 2 .233v.7H.25c-.138 0-.25.105-.25.234V13.767c0 .129.112.233.25.233h13.5c.138 0 .25-.104.25-.233V1.167c0-.13-.112-.234-.25-.234zm-3.5-.466h1.25v1.4h-1.25v-1.4zm-7.75 0h1.25v1.4H2.5v-1.4zM.5 1.4H2v.7c0 .129.112.233.25.233H4c.138 0 .25-.104.25-.233v-.7h5.5v.7c0 .129.112.233.25.233h1.75c.138 0 .25-.104.25-.233v-.7h1.5v2.1H.5V1.4zm0 12.133V3.967h13v9.566H.5z')
+                                    path(d='M8.965 5.833H2.334v7h9.332V5.833H8.966zm-1.72.483h1.72v1.69h-1.72v-1.69zm1.72 3.862h-1.72v-1.69h1.72v1.69zm-3.93-1.69h1.72v1.69h-1.72v-1.69zm0-2.172h1.72v1.69h-1.72v-1.69zm-2.21 0h1.719v1.69h-1.72v-1.69zm0 2.173h1.719v1.69h-1.72v-1.69zm1.719 3.862h-1.72v-1.69h1.72v1.69zm2.21 0H5.035v-1.69h1.72v1.69zm2.21 0H7.247v-1.69h1.719v1.69zm2.211 0H9.456v-1.69h1.72v1.69zm0-2.173H9.456v-1.69h1.72v1.69zm0-3.862v1.69H9.456v-1.69h1.72z')
+
+                        div.w-100
+                            input(type='text' placeholder='City, State, Zip').input.input_def.no-bd-left.no-bd-right
+                        div
+                            button.button.btn-search.no-bd-left
+                                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.66667C12 9.61218 9.61218 12 6.66667 12C3.72115 12 1.33333 9.61218 1.33333 6.66667C1.33333 3.72115 3.72115 1.33333 6.66667 1.33333C9.61218 1.33333 12 3.72115 12 6.66667ZM10.6206 12.0348C9.5144 12.8509 8.14687 13.3333 6.66667 13.3333C2.98477 13.3333 0 10.3486 0 6.66667C0 2.98477 2.98477 0 6.66667 0C10.3486 0 13.3333 2.98477 13.3333 6.66667C13.3333 8.14686 12.8509 9.51439 12.0348 10.6206C12.0367 10.6225 12.0386 10.6243 12.0404 10.6262L15.3738 13.9595C15.7643 14.3501 15.7643 14.9832 15.3738 15.3738C14.9833 15.7643 14.3501 15.7643 13.9596 15.3738L10.6262 12.0404C10.6243 12.0385 10.6225 12.0367 10.6206 12.0348Z" fill="white"/>
+                                </svg>
+
+
+                    .filters-block
+                        .filters-block__title
+                            span Filters
+                            svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                path(d='M12 1.71239L10.9658 0.689534L6.00004 5.30325L1.36765 0.666684L0.333374 1.68953L6.00004 7.3562L12 1.71239Z', fill='#717274')
+
+
+                        .filters-block__cont
+                            .tabs-sec
+                                div.tabs-customer
+                                    button(data-trig-tab="tab1").button Availability
+                                    button(data-trig-tab="tab2").button Distance
+                                    button(data-trig-tab="tab3").button.active Travel Radius
+                                    button(data-trig-tab="tab4").button Qualification
+                                    button(data-trig-tab="tab5").button Experience
+                                div.tabs-customer-cont
+                                    .tab-content(data-tab="tab1").hidden-tab test
+
+                                    .tab-content.hidden-tab(data-tab="tab2") test
+                                    .tab-content(data-tab="tab3")
+                                        label.customer-radio
+                                            input(type="radio" name="question1")
+                                            .check
+                                            span 0–2 miles
+                                        label.customer-radio
+                                            input(type="radio" name="question1" checked)
+                                            .check
+                                            span 9–18 miles
+                                        label.customer-radio
+                                            input(type="radio" name="question1")
+                                            .check
+                                            span Above 18 miles
+                                    .tab-content.hidden-tab(data-tab="tab4") test
+                                    .tab-content.hidden-tab(data-tab="tab5") test
+
+                            div.tags-cont
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2')
+                                    .tag-button__cont Fashion Designer
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2')
+                                    .tag-button__cont Wardrobe Consultant
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2')
+                                    .tag-button__cont Fashion Stylist
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2')
+                                    .tag-button__cont Personal Shopper
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2' checked)
+                                    .tag-button__cont Photographers
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2')
+                                    .tag-button__cont Interior Srylist
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2')
+                                    .tag-button__cont Fine Artists
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2')
+                                    .tag-button__cont Furniture Designers
+                                label.tag-button
+                                    input.tag-button__input(type='checkbox' name='exp2')
+                                    .tag-button__cont Jewelry Designers
+                    .m-t-10.has-text-centered
+                        button.button.btn-search.btn-search_mob.m-w-200
+                            span Search
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 6.66667C12 9.61218 9.61218 12 6.66667 12C3.72115 12 1.33333 9.61218 1.33333 6.66667C1.33333 3.72115 3.72115 1.33333 6.66667 1.33333C9.61218 1.33333 12 3.72115 12 6.66667ZM10.6206 12.0348C9.5144 12.8509 8.14687 13.3333 6.66667 13.3333C2.98477 13.3333 0 10.3486 0 6.66667C0 2.98477 2.98477 0 6.66667 0C10.3486 0 13.3333 2.98477 13.3333 6.66667C13.3333 8.14686 12.8509 9.51439 12.0348 10.6206C12.0367 10.6225 12.0386 10.6243 12.0404 10.6262L15.3738 13.9595C15.7643 14.3501 15.7643 14.9832 15.3738 15.3738C14.9833 15.7643 14.3501 15.7643 13.9596 15.3738L10.6262 12.0404C10.6243 12.0385 10.6225 12.0367 10.6206 12.0348Z" fill="white"/>
+                            </svg>
+            section.mt-40
+                .container
+                    .cust-title Over 145 freelancers Available for Hire
+                    .m-t-20
+                        .freelancer-card
+                            .columns.is-multiline.is-variable.is-8
+                                .column.is-narrow
+                                    .cust-user
+                                        img(src='img/modal-1.png' alt='img')
+                                .column
+                                    .d-flex.align-items-center.mb-20.col-reverse-md
+                                        a(href='#').freelancer-card__name.mr-40 Emma Vagnone
+                                        div.freelancer-card__tag
+                                            span.mr-10 Expert
+                                            span.freelancer-card__tag.freelancer-card__tag_blue Professional
+                                        a(href='#').d-flex.align-items-center.ml-auto.add-favourite
+                                            svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M9.99996 17.7917L8.79163 16.6917C4.49996 12.8 1.66663 10.225 1.66663 7.08333C1.66663 4.50833 3.68329 2.5 6.24996 2.5C7.69996 2.5 9.09163 3.175 9.99996 4.23333C10.9083 3.175 12.3 2.5 13.75 2.5C16.3166 2.5 18.3333 4.50833 18.3333 7.08333C18.3333 10.225 15.5 12.8 11.2083 16.6917L9.99996 17.7917Z', fill='#EB5757')
+
+                                    .is-flex.align-items-center.mb-20
+                                        div.freelancer-card__stars.mr-40
+                                            span &#9733
+                                            span &#9733
+                                            span &#9733
+                                            span &#9733
+                                            span &#9733
+                                        div.freelancer-card__desc <span class="has-text-weight-bold">5.0 stars</span> from 48 reviews
+                                    div.freelancer-card__text.mb-20
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    a(href='#').freelancer-card__loc.mb-20
+                                        svg(width='12', height='18', viewBox='0 0 12 18', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M5.99999 16.571C5.85774 16.4036 5.6801 16.1912 5.47676 15.9406C4.93633 15.2747 4.21657 14.3428 3.49781 13.2775C2.77808 12.2107 2.06552 11.0193 1.53442 9.83383C1.00038 8.64177 0.666656 7.49242 0.666656 6.49984C0.666656 3.55515 3.0553 1.1665 5.99999 1.1665C8.94468 1.1665 11.3333 3.55515 11.3333 6.49984C11.3333 7.49242 10.9996 8.64177 10.4656 9.83383C9.93446 11.0193 9.2219 12.2107 8.50218 13.2775C7.78341 14.3428 7.06365 15.2747 6.52322 15.9406C6.31988 16.1912 6.14224 16.4036 5.99999 16.571ZM3.41666 6.49984C3.41666 7.92598 4.57385 9.08317 5.99999 9.08317C7.42613 9.08317 8.58332 7.92598 8.58332 6.49984C8.58332 5.07369 7.42613 3.9165 5.99999 3.9165C4.57385 3.9165 3.41666 5.07369 3.41666 6.49984Z', stroke='#A0A0A2')
+                                        | Los Angeles, USA
+                                    div.freelancer-card__title Experience
+                                    .d-flex.exp-container
+                                        .exp-block
+                                            .exp-block__title Jewerly Photography
+                                            .exp-block__txt from $650/day
+                                        .exp-block
+                                            .exp-block__title Skin Care Photography
+                                            .exp-block__txt from $850/day
+                                        .exp-block
+                                            .exp-block__title Marketing Images
+                                            .exp-block__txt from $400/day
+                                    div
+                                        a(href='#').exp-more + 3 More
+                                    .mt-40.md-flex
+                                        button.button.button_pr.border-r.m-w-200.mr-20 BOOK NOW
+                                        button.button.button_tr.border-r.m-w-200 VIEW PROFILE
+                        .freelancer-card
+                            .columns.is-multiline.is-variable.is-8
+                                .column.is-narrow
+                                    .cust-user
+                                        img(src='img/modal-1.png' alt='img')
+                                .column
+                                    .d-flex.align-items-center.mb-20.col-reverse-md
+                                        a(href='#').freelancer-card__name.mr-40 Gray Styles
+                                        div.freelancer-card__tag
+                                            span.mr-10 Expert
+                                            span.freelancer-card__tag.freelancer-card__tag_blue Professional
+                                        a(href='#').d-flex.align-items-center.ml-auto.add-favourite
+                                            svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M9.29651 16.1371L9.29543 16.1361C7.13485 14.1769 5.40196 12.6016 4.20045 11.1316C3.00718 9.67172 2.41663 8.4076 2.41663 7.08333C2.41663 4.92344 4.09661 3.25 6.24996 3.25C7.47323 3.25 8.65972 3.82334 9.43083 4.7218L9.99996 5.38491L10.5691 4.7218C11.3402 3.82334 12.5267 3.25 13.75 3.25C15.9033 3.25 17.5833 4.92344 17.5833 7.08333C17.5833 8.4076 16.9927 9.67172 15.7995 11.1316C14.598 12.6016 12.8651 14.1769 10.7045 16.1361L10.7034 16.1371L9.99996 16.7774L9.29651 16.1371Z', stroke='#EB5757', stroke-width='1.5')
+
+                                    .is-flex.align-items-center.mb-20
+                                        div.freelancer-card__stars.mr-40
+                                            span &#9733
+                                            span &#9733
+                                            span &#9733
+                                            span &#9733
+                                        div.freelancer-card__desc <span class="has-text-weight-bold">5.0 stars</span> from 48 reviews
+                                    div.freelancer-card__text.mb-20
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    a(href='#').freelancer-card__loc.mb-20
+                                        svg(width='12', height='18', viewBox='0 0 12 18', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M5.99999 16.571C5.85774 16.4036 5.6801 16.1912 5.47676 15.9406C4.93633 15.2747 4.21657 14.3428 3.49781 13.2775C2.77808 12.2107 2.06552 11.0193 1.53442 9.83383C1.00038 8.64177 0.666656 7.49242 0.666656 6.49984C0.666656 3.55515 3.0553 1.1665 5.99999 1.1665C8.94468 1.1665 11.3333 3.55515 11.3333 6.49984C11.3333 7.49242 10.9996 8.64177 10.4656 9.83383C9.93446 11.0193 9.2219 12.2107 8.50218 13.2775C7.78341 14.3428 7.06365 15.2747 6.52322 15.9406C6.31988 16.1912 6.14224 16.4036 5.99999 16.571ZM3.41666 6.49984C3.41666 7.92598 4.57385 9.08317 5.99999 9.08317C7.42613 9.08317 8.58332 7.92598 8.58332 6.49984C8.58332 5.07369 7.42613 3.9165 5.99999 3.9165C4.57385 3.9165 3.41666 5.07369 3.41666 6.49984Z', stroke='#A0A0A2')
+                                        | Los Angeles, USA
+                                    div.freelancer-card__title Experience
+                                    .d-flex.exp-container
+                                        .exp-block
+                                            .exp-block__title Jewerly Photography
+                                            .exp-block__txt from $650/day
+                                        .exp-block
+                                            .exp-block__title Skin Care Photography
+                                            .exp-block__txt from $850/day
+                                    .mt-40.md-flex
+                                        button.button.button_pr.border-r.m-w-200.mr-20 BOOK NOW
+                                        button.button.button_tr.border-r.m-w-200 VIEW PROFILE
+                        .freelancer-card
+                            .columns.is-multiline.is-variable.is-8
+                                .column.is-narrow
+                                    .cust-user
+                                        img(src='img/modal-1.png' alt='img')
+                                .column
+                                    .d-flex.align-items-center.mb-20.col-reverse-md
+                                        a(href='#').freelancer-card__name.mr-40 Gray Styles
+                                        div.freelancer-card__tag
+                                            span.mr-10 Expert
+                                            span.freelancer-card__tag.freelancer-card__tag_blue Professional
+                                        a(href='#').d-flex.align-items-center.ml-auto.add-favourite
+                                            svg(width='20', height='20', viewBox='0 0 20 20', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                                path(d='M9.29651 16.1371L9.29543 16.1361C7.13485 14.1769 5.40196 12.6016 4.20045 11.1316C3.00718 9.67172 2.41663 8.4076 2.41663 7.08333C2.41663 4.92344 4.09661 3.25 6.24996 3.25C7.47323 3.25 8.65972 3.82334 9.43083 4.7218L9.99996 5.38491L10.5691 4.7218C11.3402 3.82334 12.5267 3.25 13.75 3.25C15.9033 3.25 17.5833 4.92344 17.5833 7.08333C17.5833 8.4076 16.9927 9.67172 15.7995 11.1316C14.598 12.6016 12.8651 14.1769 10.7045 16.1361L10.7034 16.1371L9.99996 16.7774L9.29651 16.1371Z', stroke='#EB5757', stroke-width='1.5')
+
+                                    .is-flex.align-items-center.mb-20
+                                        div.freelancer-card__stars.mr-40
+                                            span &#9733
+                                            span &#9733
+                                            span &#9733
+                                            span &#9733
+                                        div.freelancer-card__desc <span class="has-text-weight-bold">5.0 stars</span> from 48 reviews
+                                    div.freelancer-card__text.mb-20
+                                        | Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                                    a(href='#').freelancer-card__loc.mb-20
+                                        svg(width='12', height='18', viewBox='0 0 12 18', fill='none', xmlns='http://www.w3.org/2000/svg')
+                                            path(d='M5.99999 16.571C5.85774 16.4036 5.6801 16.1912 5.47676 15.9406C4.93633 15.2747 4.21657 14.3428 3.49781 13.2775C2.77808 12.2107 2.06552 11.0193 1.53442 9.83383C1.00038 8.64177 0.666656 7.49242 0.666656 6.49984C0.666656 3.55515 3.0553 1.1665 5.99999 1.1665C8.94468 1.1665 11.3333 3.55515 11.3333 6.49984C11.3333 7.49242 10.9996 8.64177 10.4656 9.83383C9.93446 11.0193 9.2219 12.2107 8.50218 13.2775C7.78341 14.3428 7.06365 15.2747 6.52322 15.9406C6.31988 16.1912 6.14224 16.4036 5.99999 16.571ZM3.41666 6.49984C3.41666 7.92598 4.57385 9.08317 5.99999 9.08317C7.42613 9.08317 8.58332 7.92598 8.58332 6.49984C8.58332 5.07369 7.42613 3.9165 5.99999 3.9165C4.57385 3.9165 3.41666 5.07369 3.41666 6.49984Z', stroke='#A0A0A2')
+                                        | Los Angeles, USA
+                                    div.freelancer-card__title Experience
+                                    .d-flex.exp-container
+                                        .exp-block
+                                            .exp-block__title Jewerly Photography
+                                            .exp-block__txt from $650/day
+                                        .exp-block
+                                            .exp-block__title Skin Care Photography
+                                            .exp-block__txt from $850/day
+                                    .mt-40.md-flex
+                                        button.button.button_pr.border-r.m-w-200.mr-20 BOOK NOW
+                                        button.button.button_tr.border-r.m-w-200 VIEW PROFILE
+                    .m-t-20.load-more
+                        a(href='#') load more
+                        svg(width='12', height='8', viewBox='0 0 12 8', fill='none', xmlns='http://www.w3.org/2000/svg')
+                            path(d='M12 1.71239L10.9658 0.689534L6.00004 5.30325L1.36765 0.666684L0.333374 1.68953L6.00004 7.3562L12 1.71239Z', fill='#7B5179')
+            section.mt-40
+                .container
+                    .has-text-centered
+                        .title-purple Questions? Look here.
+                        .cust-subtitle Answers to commonly asked questions from the experts on AKO’
+                    .question-block
+                        .question-block__left
+                            ul
+                                li.active
+                                    a(href='#') Getting started
+                                li
+                                    a(href='#') Entering a contest
+                                li
+                                    a(href='#') Pricing and payment
+                                li
+                                    a(href='#') How contests work
+                                li
+                                    a(href='#') Clients
+                                li
+                                    a(href='#') Designers
+
+                        .question-block__right
+                            .question-item
+                                .question-item__title
+                                    .plus-minus-toggle.collapsed
+                                    span How do I use the designer search tool?
+
+                                .question-item__cont It’s impossible to launch a design project with a designer who isn't available – that's why we built our availability feature! It takes the guesswork out of wondering whether the designer you're inviting to your project is available to take on new clients.
+                            .question-item.active
+                                .question-item__title
+                                    .plus-minus-toggle
+                                    span Designer availability and responsiveness
+                                .question-item__cont It’s impossible to launch a design project with a designer who isn't available – that's why we built our availability feature! It takes the guesswork out of wondering whether the designer you're inviting to your project is available to take on new clients.
+                            .question-item
+                                .question-item__title
+                                    .plus-minus-toggle.collapsed
+                                    span 100% Money-back guarantee?
+                                .question-item__cont It’s impossible to launch a design project with a designer who isn't available – that's why we built our availability feature! It takes the guesswork out of wondering whether the designer you're inviting to your project is available to take on new clients.
+                            .question-item
+                                .question-item__title
+                                    .plus-minus-toggle.collapsed
+                                    span What is identity verification?
+                                .question-item__cont It’s impossible to launch a design project with a designer who isn't available – that's why we built our availability feature! It takes the guesswork out of wondering whether the designer you're inviting to your project is available to take on new clients.
+                            .question-item
+                                .question-item__title
+                                    .plus-minus-toggle.collapsed
+                                    span What is a brand guide?
+                                .question-item__cont It’s impossible to launch a design project with a designer who isn't available – that's why we built our availability feature! It takes the guesswork out of wondering whether the designer you're inviting to your project is available to take on new clients.
+
+
+
+
+
+
+
+
+

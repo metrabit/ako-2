@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+html(lang="en")
+    - var title = 'Available Jobs'
+    include ../blocks/head
+    body
+        .wrapper.wrapper_dashboard
+            include ../blocks/sidebar
+            +sidebar
+            .page
+                header.header-dash
+                    .header-dash__left
+                        .header-dash-icon.active
+                            span
+                            span
+                            span
+                        .header-title Available Jobs
+                    .header-dash__right
+                        .header-menu.dropdown
+                            button.button.drop-btn.dropdown__trig
+                                .drop-btn__name John Doe
+                                .drop-btn__img
+                                    img(src='img/img-1.png' alt='avatar')
+                            .header-menu__cont.dropdown__cont
+                                ul.header-menu__list
+                                    li
+                                        a(href='#') Edit profile
+                                    li
+                                        a(href='#') Log Out
+                .container.container_dash
+                    .title-container.has-text-centered
+                        h2.title-def 5,671 Jobs found
+                        p.subtitle-def.m-t-20 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    .header-tags-inp
+                        h3.is-size-5.has-text-grey-darker Category of Jobs
+                        input(type="text" name="tags" value="Photography, Fashion, Wardrobe Stylists, Image Consultants, Fashion Consultants").header-tags
+                    .divider
+                    .job-item.m-t-40
+                        .columns
+                            .column.is-two-thirds
+                                h2.title-def.title-def_small Image consultant needed for a job
+                                .job-item__subtext.m-t-20
+                                    span.black-text Service Location - 11206
+                                    span.black-text Est. Budget  - $400
+                                    span.black-text Date Needed - 10 /03/2018
+                                .job-item__cont.m-t-15
+                                    p.txt-def.m-b-15 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit nunc, semper at bibendum sed, imperdiet placerat augue. Pellentesque finibus risus urna. Duis ultricies finibus sagittis. Vivamus suscipit mollis dolor, in varius justo imperdiet nec. Quisque hendrerit convallis porta... <a href="#" class="purple"> More</a>
+                                    p.black-text.job-item__tags Other Preferences
+                                        span.tag-def Self Taught
+                                        span.tag-def Professional
+                            .column
+                                .job-item__right
+                                    .job-item__img
+                                        img(src='img/job-post.png' alt='job-post')
+                                    .m-t-10
+                                        span.txt-def Posted 3 weeks ago
+                                    .m-t-10
+                                        button(data-modal="interest").job-btn Show Interest
+                                    .m-t-10
+                                        button(data-modal="msg").job-btn.job-btn_purple Message
+                                    .m-t-15.edit-btns
+                                        button.button-icon
+                                            i.far.fa-edit
+                                        button.button-icon
+                                            i.far.fa-trash-alt
+                    .job-item.m-t-40
+                        .columns
+                            .column.is-two-thirds
+                                h2.title-def.title-def_small Image consultant needed for a job
+                                .job-item__subtext.m-t-20
+                                    span.black-text Service Location - 11206
+                                    span.black-text Est. Budget  - $400
+                                    span.black-text Date Needed - 10 /03/2018
+                                .job-item__cont.m-t-15
+                                    p.txt-def.m-b-15 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus velit nunc, semper at bibendum sed, imperdiet placerat augue. Pellentesque finibus risus urna. Duis ultricies finibus sagittis. Vivamus suscipit mollis dolor, in varius justo imperdiet nec. Quisque hendrerit convallis porta... <a href="#" class="purple"> More</a>
+                                    p.black-text.job-item__tags Other Preferences
+                                        span.tag-def Self Taught
+                                        span.tag-def Professional
+                            .column
+                                .job-item__right
+                                    .job-item__img
+                                        img(src='img/job-post.png' alt='job-post')
+                                    .m-t-10
+                                        span.txt-def Posted 3 weeks ago
+                                    .m-t-10
+                                        button(data-modal="interest").job-btn Show Interest
+                                    .m-t-10
+                                        button(data-modal="msg").job-btn.job-btn_purple Message
+                                    .m-t-15.edit-btns
+                                        button.button-icon
+                                            i.far.fa-edit
+                                        button.button-icon
+                                            i.far.fa-trash-alt
+                    .pagination-block.m-t-50
+                        ul
+                            li
+                                a(href='#').active 1
+                            li
+                                a(href='#') 2
+                            li
+                                a(href='#') 3
+                            li
+                                a(href='#') 4
+                            li
+                                a(href='#') 5
+                            li
+                                a(href='#') 6
+                            li
+                                a(href='#') 7
+                            li
+                                a(href='#') 8
+                            li
+                                a(href='#') 9
+                            li
+                                a(href='#') 10
+            .modal.modal_msg.modal-block
+                .modal-background
+                .modal-content
+                    h3.modal-block__title You have 5 messages for this job
+                    .modal-block__cont
+                        .modal-item
+                            .columns.is-gapless.is-vcentered
+                                .column.is-narrow.modal-item__img
+                                    img(src='img/modal-1.png' alt='modal img')
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Kia Willium
+                                        p.modal-item__txt Nullam vulputate mi vitae tristique pretium. Nunc eget mauris tortor. Donec auctor, elit quis efficitur elementum,
+                                        .m-t-15.m-b-15.modal-item__time
+                                            i.fas.fa-clock
+                                            span Sent you message 1 hour ago
+                                .column.is-narrow
+                                    .like-block
+                                        button.button-icon
+                                            i.far.fa-heart
+                                .column.is-narrow
+                                    .modal__btns
+                                        button.modal-btn.modal-btn_pink hire
+                                        button.modal-btn.modal-btn_purple.m-t-10 respond
+                                        button.modal-btn.modal-btn_grey.m-t-10 decline
+                        .modal-item
+                            .columns.is-gapless.is-vcentered
+                                .column.is-narrow.modal-item__img
+                                    img(src='img/modal-2.png' alt='modal img')
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Kia Willium
+                                        p.modal-item__txt Nullam vulputate mi vitae tristique pretium. Nunc eget mauris tortor. Donec auctor, elit quis efficitur elementum,
+                                        .m-t-15.m-b-15.modal-item__time
+                                            i.fas.fa-clock
+                                            span Sent you message 1 hour ago
+                                .column.is-narrow
+                                    .like-block
+                                        button.button-icon
+                                            i.far.fa-heart
+                                .column.is-narrow
+                                    .modal__btns
+                                        button.modal-btn.modal-btn_pink hire
+                                        button.modal-btn.modal-btn_purple.m-t-10 respond
+                                        button.modal-btn.modal-btn_grey.m-t-10 decline
+                        .modal-item
+                            .columns.is-gapless.is-vcentered
+                                .column.is-narrow.modal-item__img
+                                    img(src='img/modal-3.png' alt='modal img')
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Kia Willium
+                                        p.modal-item__txt Nullam vulputate mi vitae tristique pretium. Nunc eget mauris tortor. Donec auctor, elit quis efficitur elementum,
+                                        .m-t-15.m-b-15.modal-item__time
+                                            i.fas.fa-clock
+                                            span Sent you message 3 days ago
+                                .column.is-narrow
+                                    .like-block
+                                        button.button-icon
+                                            i.far.fa-heart
+                                .column.is-narrow
+                                    .modal__btns
+                                        button.modal-btn.modal-btn_pink hire
+                                        button.modal-btn.modal-btn_purple.m-t-10 respond
+                                        button.modal-btn.modal-btn_grey.m-t-10 decline
+            .modal.modal_interest.modal-block
+                .modal-background
+                .modal-content
+                    h3.modal-block__title You have 13 interests in your job
+                    .modal-block__cont.modal-block__cont_int
+                        .modal-item.modal-item_int
+                            .columns.is-gapless.is-vcentered.is-multiline.is-centered
+                                .column.is-narrow.modal-item__img
+                                    img(src='img/modal-1.png' alt='modal img')
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Kia Willium
+                                        .modal-status.m-t-5
+                                            .modal-status__item.modal-status__item_red
+                                                i.fas.fa-certificate
+                                                span Experienced
+                                            .modal-status__item.modal-status__item_orange
+                                                i.fas.fa-certificate
+                                                span Experienced
+                                        .modal-location.m-t-5
+                                            i.fas.fa-map-marker-alt
+                                            span 256 Park Ave, New York 1077, USA
+                                        .modal-item__time.m-t-20
+                                            i.fas.fa-clock
+                                            span Sent you message 1 hour ago
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Services
+                                        .modal-services.m-t-5
+                                            .modal-services__item
+                                                span Facial Photography
+                                                span.pr $50/1hr
+                                            .modal-services__item
+                                                span Facial Photography
+                                                span.pr $50/1hr
+                                            .modal-services__item_more
+                                                a(href='#').pr More
+                                .column.is-narrow
+                                    .like-block
+                                        button.button-icon
+                                            i.far.fa-heart
+                                        button.button-icon
+                                            i.far.fa-eye
+                                .column.is-narrow
+                                    .modal__btns
+                                        button.modal-btn.modal-btn_pink hire
+                                        button.modal-btn.modal-btn_purple.m-t-10 message
+                                        button.modal-btn.modal-btn_grey.m-t-10 decline
+                        .modal-item.modal-item_int
+                            .columns.is-gapless.is-vcentered.is-multiline.is-centered
+                                .column.is-narrow.modal-item__img
+                                    img(src='img/modal-2.png' alt='modal img')
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Kia Willium
+                                        .modal-status.m-t-5
+                                            .modal-status__item.modal-status__item_red
+                                                i.fas.fa-certificate
+                                                span Experienced
+                                            .modal-status__item.modal-status__item_orange
+                                                i.fas.fa-certificate
+                                                span Experienced
+                                        .modal-location.m-t-5
+                                            i.fas.fa-map-marker-alt
+                                            span 256 Park Ave, New York 1077, USA
+                                        .modal-item__time.m-t-20
+                                            i.fas.fa-clock
+                                            span Sent you message 1 hour ago
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Services
+                                        .modal-services.m-t-5
+                                            .modal-services__item
+                                                span Facial Photography
+                                                span.pr $50/1hr
+                                            .modal-services__item
+                                                span Facial Photography
+                                                span.pr $50/1hr
+                                            .modal-services__item_more
+                                                a(href='#').pr More
+                                .column.is-narrow
+                                    .like-block
+                                        button.button-icon
+                                            i.far.fa-heart
+                                        button.button-icon
+                                            i.far.fa-eye
+                                .column.is-narrow
+                                    .modal__btns
+                                        button.modal-btn.modal-btn_pink hire
+                                        button.modal-btn.modal-btn_purple.m-t-10 message
+                                        button.modal-btn.modal-btn_grey.m-t-10 decline
+                        .modal-item.modal-item_int
+                            .columns.is-gapless.is-vcentered.is-multiline.is-centered
+                                .column.is-narrow.modal-item__img
+                                    img(src='img/modal-3.png' alt='modal img')
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Kia Willium
+                                        .modal-status.m-t-5
+                                            .modal-status__item.modal-status__item_red
+                                                i.fas.fa-certificate
+                                                span Experienced
+                                            .modal-status__item.modal-status__item_orange
+                                                i.fas.fa-certificate
+                                                span Experienced
+                                        .modal-location.m-t-5
+                                            i.fas.fa-map-marker-alt
+                                            span 256 Park Ave, New York 1077, USA
+                                        .modal-item__time.m-t-20
+                                            i.fas.fa-clock
+                                            span Sent you message 1 hour ago
+                                .column
+                                    .modal-item__center
+                                        h3.modal-item__title Services
+                                        .modal-services.m-t-5
+                                            .modal-services__item
+                                                span Facial Photography
+                                                span.pr $50/1hr
+                                            .modal-services__item
+                                                span Facial Photography
+                                                span.pr $50/1hr
+                                            .modal-services__item_more
+                                                a(href='#').pr More
+                                .column.is-narrow
+                                    .like-block
+                                        button.button-icon
+                                            i.far.fa-heart
+                                        button.button-icon
+                                            i.far.fa-eye
+                                .column.is-narrow
+                                    .modal__btns
+                                        button.modal-btn.modal-btn_pink hire
+                                        button.modal-btn.modal-btn_purple.m-t-10 message
+                                        button.modal-btn.modal-btn_grey.m-t-10 decline

@@ -1,0 +1,83 @@
+.section-def
+  padding 35px 30px 25px
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.09);
+  border-radius: 5px;
+  background-color: #ffffff
+
+.section-title
+  color: #583b53
+  font-size: 23px
+  font-weight: 400
+
+
+.billing-item
+  min-width 259px
+  height 120px
+  display: flex
+  align-items center
+  justify-content space-between
+  padding 30px
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.09)
+  border-radius: 5px
+  background-color: #ffffff
+  &.active
+    border: 2px solid #789429
+    .billing-item__txt
+      font-size: 23px
+  &.disabled
+    background-color: #fcf8fc
+
+  &__txt
+    display: flex
+    flex-direction column
+    color: #583b53
+    font-size 18px
+    font-weight: 400
+  @media (max-width 900px)
+    min-width 300px
+  @media (max-width 500px)
+    min-width 100%
+    &.active
+      .billing-item__txt
+        font-size 20px
+
+
+.billing-buttons
+  @media (min-width 1440px) and (max-width 1700px)
+    margin 0 auto
+    max-width 350px
+  @media (max-width 1010px)
+    min-width 280px
+  @media (max-width 500px)
+    min-width 100%
+
+
+.downgrade-block
+  display: flex
+  flex-wrap wrap
+  justify-content space-between
+  align-items center
+
+  &__card
+    display: flex
+    color: #583b53
+    font-size: 23px
+    svg
+      margin-right 10px
+  @media (max-width 500px)
+    &__card
+      width 100%
+      justify-content center
+      font-size 18px
+      margin-bottom: 20px
+    &__btn
+      width 100%
+      display: flex
+      justify-content center
+      button
+        width: 100%;
+  @media (max-width 320px)
+    &__card
+      text-align center
+      svg
+        display: none

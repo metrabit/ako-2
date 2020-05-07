@@ -1,0 +1,35 @@
+.label-radio
+  user-select: none
+  cursor: pointer
+  display: inline-flex
+  align-items: center
+  justify-content: space-between
+  width 100%
+  padding 12px 20px
+  &:not(:last-child)
+    border-bottom 1px dashed #5e3d55
+  input
+    display: none
+  .check
+    margin-top: 2px
+    margin-right: 10px
+    display: inline-flex
+    align-items: center
+    justify-content: center
+    height: 16px
+    width: 16px
+    min-width: 16px
+    border: 2px solid #e9d4e6;
+    border-radius: 50%
+    &:before
+      content: ''
+      opacity: 0
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      background: #5e3d55;
+      transition all .3s
+  input:checked + .check
+    border-color: #e9d4e6;
+    &:before
+      opacity: 1

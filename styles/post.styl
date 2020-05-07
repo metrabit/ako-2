@@ -1,0 +1,613 @@
+.wrapper_dashboard
+  display: flex
+  overflow visible
+  @media (max-width 1024px)
+    button:not(.job-btn, .button_green)
+      padding 0
+
+.sidebar
+  z-index: 10
+  background: #fff
+  min-width 270px
+  width: 270px
+  height: 100vh
+  position: sticky
+  top 0
+  box-shadow: 0 2px 10px #e1e2e6
+  transition all 0.35s ease
+  @media (max-width 975px)
+    min-width 220px
+    width 220px
+  &__logo
+    display: flex
+    align-items center
+    padding-left 30px
+    height 85px
+    border-bottom 1px solid rgba(176, 176, 176, 0.22)
+    img
+      width: 100%;
+      max-width: 70px;
+  &__nav
+    display: block
+    li
+      a
+        padding 8px 30px
+        color $dirty-purple
+
+        display: flex
+        font-size 1.015rem
+        min-height 50px
+        align-items center
+        &:hover,
+        &.active
+          background-color $dirty-purple
+          color #fff
+          svg
+            path
+              stroke #fff
+    .menu-icon
+      display inline-flex
+      justify-content center
+      width 30px
+      font-size 22px
+      margin-right: 10px
+
+  &_hide
+    width 0;
+    min-width 0
+    opacity: 0
+    .sidebar__nav,
+    .sidebar__logo
+      opacity 0
+      transition none
+
+@media (min-width 1200px)
+  .sidebar:not(.sidebar_hide) + .page > .container
+    margin: 0 30px
+
+@media (min-width 1700px)
+  .sidebar:not(.sidebar_hide) + .page > .container
+    margin: 0 30px
+    max-width: 1400px
+
+@media (max-width 700px)
+  .sidebar:not(.sidebar_hide) + .page > .header-dash
+    justify-content: flex-end
+    .header-title,
+    .header-dash__right
+      display: none
+
+  .sidebar
+    position: fixed
+    top: 0
+    left: 0
+
+
+
+.header-dash
+  z-index 9
+  position sticky
+  top 0
+  display: flex
+  justify-content space-between
+  align-items center
+  padding 0 25px
+  margin 0 0 0 9px
+  background-color #fff
+  height 85px
+  border-bottom 1px solid rgba(176, 176, 176, 0.22)
+  @media (max-width 520px)
+    padding 0 15px
+  &__left
+    display: flex
+    align-items center
+    margin-left: -10px
+.header-dash-icon
+  position: relative
+  margin-right: 30px
+  cursor pointer
+  min-width: 35px
+  width: 35px
+  @media (max-width 430px)
+    margin-right: 15px
+
+  span
+    display: block
+    width: 100%
+    height 3px
+    border-radius 2px
+    background-color $dirty-purple
+    transition all 0.3s
+    &:not(:last-child)
+      margin-bottom: 6px
+
+  &.active
+    span:first-child
+      max-width 18px
+    span:nth-child(2)
+      max-width 26px
+
+
+.header-menu
+  position relative
+  &__cont
+    z-index: 9;
+    position: absolute;
+    top: calc(100% + 25px);
+    right: 20px;
+    width: 155px;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 5px 10px 0 rgba(8,29,59,0.05)
+    @media (max-width 1024px)
+      right 0
+  &__list
+    margin: 0
+    padding: 15px 20px
+    width: 100%
+.drop-btn
+  border none
+  position relative
+  &__name
+    margin-right: 30px
+    @media (max-width 600px)
+      margin-right: 15px
+  &__img
+    overflow hidden
+    width 40px
+    @media (max-width 600px)
+      width 30px
+      height 30px
+    @media (max-width 550px)
+      display: none
+    img
+      display: block
+      width 40px
+      height 40px
+      border-radius 50%
+      @media (max-width 600px)
+        width 30px
+        height 30px
+  &:after
+    position absolute
+    margin-left: 10px
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 5px 4px 0 4px;
+    border-color: #b8bccf transparent transparent transparent;
+    transition: all 0.3s;
+    @media (max-width 550px)
+      margin-left: 35px
+  &.active:after
+    transform: rotate(180deg);
+.dropdown:not(.active) .dropdown__cont
+  display: none
+.container_dash
+  @media (max-width 1440px)
+    max-width 960px
+  @media (max-width 1260px)
+    max-width 800px
+.label_def
+  font-size: 16px
+  font-weight: 600
+  line-height: 1.33
+  color: #4e556d
+  &:not(:last-child)
+    margin-bottom: .5em
+.label-button
+  display: inline-flex
+  cursor: pointer
+  width 100%
+  &__input
+    display: none
+  &__cont
+    font-size: 1rem;
+    line-height 1rem;
+    font-weight 500
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    height: 50px
+    border: 1px solid rgba(176, 176, 176, 0.22)
+    background-color: #fff
+    transition: all 0.3s
+    &_plan
+      position relative
+      flex-direction column
+      padding 20px 0
+      min-height 55px
+      height auto
+      color: #7d7f82
+      background-color transparent
+      border-radius: 5px
+      transition none
+      font-size: 23px
+      span
+        font-size: 18px
+        margin-top: 10px
+        color: #7d7f82
+        font-weight: 400
+    @media (max-width 1024px)
+      font-size 0.70rem
+      line-height 0.75rem
+      &_plan
+        font-size: 1rem;
+        line-height 1rem;
+    @media (max-width 768px)
+      font-size: 1rem;
+      line-height 1rem;
+  &__discount
+    position absolute
+    top 20px
+    right 15px
+    display: inline-flex
+    align-items center
+    justify-content center
+    font-size: 13px
+    line-height: 13px
+    padding 5px 10px
+    color #FFFFFF
+    border-radius: 13px;
+    background-color: #4baf4f;
+    @media (max-width 580px)
+      font-size 11px
+      line-height: 11px
+      transform rotate(90deg)
+      top: 30px
+      right: -20px
+  &:hover &__cont
+    border: 2px solid #e4ccdf;
+  &:hover &__cont_plan
+    border: 1px solid #e4ccdf;
+
+.label-button__input:checked + .label-button__cont
+  box-shadow: -1px 9px 10px rgba(0, 0, 0, 0.07);
+  border: 2px solid #5e3d55;
+
+.label-button__input:checked + .label-button__cont_plan
+  border: 1px solid #5e3d55;
+  color: #32373d
+  font-weight: 700
+  &:before
+    content ''
+    background-image url("img/plan-checked.png")
+    position absolute
+    top 50%
+    left 15px
+    transform translate(0, -50%)
+    height 30px
+    width 30px
+    background-color: #5e3d55
+    border-radius 50%
+  @media (max-width 375px)
+    &:before
+      left 7px
+  @media (max-width 320px)
+    &:before
+      display: none
+
+.input_def,
+.textarea_def
+  padding-left: 14px
+  padding-right: 14px
+  width: 100%
+  height: 50px
+  box-shadow: none
+  color: rgb(78, 85, 109)
+  font-size: 0.9375rem
+  letter-spacing: 0px
+  border: 1px solid rgba(176, 176, 176, 0.22);
+  border-image: initial
+  border-radius: 4px
+  background: #fff
+.input_plan
+  border: 1px solid #bebebe;
+.textarea_def_sub
+  position relative
+  height 260px
+  padding-bottom 90px
+  resize none
+.textarea_sub
+  position absolute
+  bottom 0
+  left 0
+  right 0
+  bottom 1px
+  width calc(100% - 2px)
+  margin 0 auto
+  height 80px
+  padding 20px 30px
+  border-bottom-left-radius 5px
+  border-bottom-right-radius 5px
+  background-color: #f2f2f2;
+  ul
+    display: flex
+    flex-wrap wrap
+    li
+      color: #5c5c5c
+      &:not(:last-child)
+        margin-right: 20px
+  @media (max-width 1440px)
+    font-size 0.80rem
+  @media (max-width 1024px)
+    font-size 0.8rem
+  @media (max-width 790px)
+    font-size 0.7rem
+  @media (max-width 700px)
+    padding 10px 30px
+    ul
+      flex-direction column
+  @media (max-width 350px)
+    line-height 0.85rem
+
+.black-text
+  font-weight: 500
+  color: #333333
+  font-size 1rem
+  white-space: nowrap;
+.purple
+  color $dirty-purple
+.job-btn
+  cursor: pointer
+  font-family: 'Roboto', sans-serif;
+  color #fff
+  display flex
+  justify-content center
+  align-items center
+  font-size: 16px;
+  font-weight: 400;
+  padding 10px 30px
+  width 160px
+  border-radius: 20px;
+  background-color: #4baf4f;
+  border none
+  outline none
+  &:hover
+    color #fff;
+    background-color #62ce67
+  &_purple
+    background-color: #5e3d55;
+    &:hover
+      color #ffffff
+      background-color #a57a99
+.input.is-active,
+.input.is-focused,
+.input:active,
+.input:focus,
+.textarea.is-active,
+.textarea.is-focused,
+.textarea:active,
+.textarea:focus
+  box-shadow: -1px 9px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #5e3d55;
+  background #fff
+.input.is-hovered,
+.input:hover,
+.textarea.is-hovered,
+.textarea:hover
+  border: 1px solid #5e3d55;
+field =
+  padding-left: 14px
+  padding-right: 14px
+  width: 100%
+  height 50px
+  box-shadow: none
+  border: 1px solid rgba(176, 176, 176, 0.22)
+  border-radius: 4px
+  background: #fff
+  color: #9a9a9a
+  font-size 0.9375rem
+  letter-spacing 0
+field-focus =
+  box-shadow: -1px 9px 10px rgba(0, 0, 0, 0.1);
+  border: 1px solid #5e3d55;
+  background #fff
+.chosen-container
+  font-size 0.9375rem
+  .chosen-single
+    display: inline-flex
+    align-items: center
+    {field}
+    > div
+      display: flex
+      align-items: center
+      width: 32px
+      b
+        background-image: none !important
+        position: absolute;
+        top: 50%;
+        right: 18px
+        content: '';
+        display: block;
+        width: .525em;
+        height: .525em;
+        margin-top: -.375em;
+        border: 2px solid #4e556d;
+        border-radius: 2px;
+        border-right: 0;
+        border-top: 0;
+        transform: rotate(-45deg);
+        transform-origin: center;
+        transition all 0.3s;
+        pointer-events: none;
+
+  .chosen-drop
+    margin-top: 2px
+    overflow: hidden
+    border none
+    border-radius 3px
+    box-shadow 2px 4px 8px 0 rgba(84, 84, 84, 0.13)
+  .chosen-results
+    margin: 0
+    padding: 0
+    li.disabled-result
+      display: none
+    .active-result
+      {field}
+      padding: 10px
+      height: auto
+      min-height: 40px
+      line-height: 20px
+      border: none
+      border-radius: 0
+      &.highlighted,
+      &:hover
+        background: $dirty-purple
+        color: #fff
+  &-active.chosen-with-drop .chosen-single
+    box-shadow: none
+    border-radius: 5px
+    > div b
+      margin-top: -.125em
+      transform rotate(135deg)
+    {field-focus}
+
+.header-title
+  font-size 1.25rem
+  @media (max-width 600px)
+    font-size 1rem
+.page
+  padding-bottom: 60px
+  min-height: 100vh
+  min-width: 320px
+  flex 1
+  background: #fff
+  @media (max-width 415px)
+    padding-bottom: 30px
+.title-container
+  padding 70px 0
+  @media (max-width 550px)
+    padding 45px 0
+.divider
+  width 100%
+  height 1px
+  background-color rgba(176,176,176,0.22);
+.job-item
+  padding-bottom 30px
+  border-bottom 1px solid rgba(176,176,176,0.22);
+  &__subtext
+    span:not(:last-child)
+      margin-right: 25px
+    @media (max-width 1100px)
+      span
+        display: block
+  &__tags
+    display: flex;
+    flex-wrap wrap
+    align-items: center;
+    span
+      cursor pointer
+      &:first-child
+        margin-left: 15px
+      &:not(first-child)
+        margin-right: 5px
+    @media (max-width 500px)
+      flex-direction column
+      align-items flex-start
+      span
+        &:first-child
+          margin-left: 0
+          margin-bottom: 3px
+        &:not(first-child)
+          margin-right: 0
+          margin-bottom: 3px
+  &__img
+    img
+      display: block
+      width: 80px
+      height: 80px
+      background-color #e6e6e6
+      border: 4px solid #e6e6e6
+      border-radius 50%
+      object-fit cover
+  &__right
+    max-width 160px
+    width 100%
+    margin-left: auto
+    display: flex
+    flex-direction column
+    align-items center
+    @media (max-width 768px)
+      margin auto
+  .edit-btns
+    width 100%
+    display: flex
+    justify-content center
+    .button-icon
+      i
+        color: #88898c
+        font-size: 1rem
+        transition all 0.2s ease
+      &:not(:first-child)
+        margin-left: 25px
+      &:hover i
+        color $dirty-purple
+.header-tags-inp
+  div.tagsinput
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    height auto !important
+    input
+      min-width 80px
+      font-size 17px
+      font-family inherit
+      height: 50px;
+      align-items: center;
+      display: inline-flex;
+      @media (max-width 768px)
+        height auto
+    span.tag
+      display: inline-flex;
+      align-items: center;
+      border: none;
+      height: 50px;
+      border-radius: 24px;
+      margin-right: 10px
+      padding 0 20px
+      background-color: #e6e6e6;
+      color: #333333;
+      font-size: 17px;
+      cursor default
+      @media (max-width 768px)
+        height auto
+        padding 8px 20px
+        font-size 15px
+        margin-right: 5px
+      a
+        width: 16px;
+        height: 16px;
+        background: url("img/close.png") center no-repeat;
+        color: transparent;
+        @media (max-width 768px)
+          height 12px
+          width 12px
+
+.pagination-block
+  ul
+    display: flex
+    li
+      a
+        font-size: 18px
+        color: #a9a9a9
+        &.active,
+        &:hover
+          color: #32373d
+      &:not(:last-child)
+        margin-right: 15px
+.control.has-icons-right .icon
+  width: 50px
+  height: 50px
+
+.control.has-icons-right .icon:before
+  content: '';
+  position: absolute;
+  top: 15%;
+  left: 0;
+  width: 1px;
+  height: 70%;
+  background: rgba(135,140,156,0.12)
+

@@ -1,0 +1,344 @@
+.modal_msg .modal-content
+  display: flex
+  flex-direction: column
+  width: 880px
+  height: auto
+  border-radius: 10px
+  @media (max-width 415px)
+    z-index 1
+    max-height 85vh
+.modal_interest .modal-content
+  display: flex
+  flex-direction: column
+  width: 1180px
+  height: auto
+  border-radius: 10px
+  @media (max-width 1200px)
+    width 900px
+    z-index 1
+  @media (max-width 768px)
+    .modal-item__center
+      padding 15px 0
+  @media (max-width 415px)
+    max-height 85vh
+
+
+.modal_try-ako .modal-content
+  display: flex
+  flex-direction: column
+  width: 1070px
+  height: auto
+  border-radius: 10px
+
+  .modal-card-body
+    background url("img/modal-bg.png") no-repeat
+    background-position right 200%
+    background-color: #faf7fc
+  .subtitle-def
+    font-size 30px
+  .check-list
+    margin 25px 0
+    li
+      display: flex
+      &:not(:last-child)
+        margin-bottom: 15px
+      .check
+        padding-top: 4px
+        min-width 25px
+      .plans-txt
+        font-size 20px
+  @media (max-width 1200px)
+    width 900px
+    z-index 1
+    .subtitle-def
+      font-size 24px
+    .check-list
+      li
+        .plans-txt
+          font-size 16px
+  @media (max-width 900px)
+    width calc(100% - 40px)
+    margin 0 auto
+    .mix-images
+      display: none
+  @media (max-width 415px)
+    width calc(100% - 60px)
+    max-height 75vh
+    .subtitle-def
+      font-size 18px
+    .check-list
+      li
+        .plans-txt
+          font-size 15px
+    .button_green
+      width 100%
+
+
+
+.modal_payment .modal-content
+  max-width 650px
+  display: flex
+  flex-direction: column
+  height: auto
+  border-radius: 10px
+  .modal-card-body
+    background-color: #faf7fc
+    padding 0 70px 20px
+  .check-list
+    margin 25px 0 25px 20px
+    li
+      display: flex
+      &:not(:last-child)
+        margin-bottom: 15px
+      .check
+        padding-top: 4px
+        min-width 25px
+      .plans-txt
+        font-size 20px
+  @media (max-width 500px)
+    max-height 75vh
+    width calc(100% - 60px)
+    z-index 1
+    .modal-card-body
+      padding 20px
+      button
+        width: 100%;
+    .check-list
+      margin 10px 0
+      li
+        .plans-txt
+          font-size: 15px;
+
+
+.modal_flagging .modal-content
+  display: flex
+  flex-direction: column
+  width: 100%
+  max-width 530px
+  height: auto
+  border-radius: 10px
+
+  .modal-card-body
+    background-color: #faf7fc
+  .flagging-list
+    margin -10px -20px 0
+  @media (max-width 900px)
+    width calc(100% - 40px)
+    margin 0 auto
+  @media (max-width 415px)
+    width calc(100% - 60px)
+    max-height 75vh
+
+
+.modal-block
+  &__title
+    min-height: 70px
+    background-color: #5e3d55
+    font-weight 500
+    color #ffffff
+    display: flex
+    flex-direction column
+    align-items center
+    justify-content center
+    font-size 1.5rem
+    padding: 10px 0
+    z-index: 11
+    &_left
+      padding-left 20px
+      justify-content flex-start
+    @media (max-width 415px)
+      font-size 1.2rem
+    @media (max-width 320px)
+      font-size 1rem
+  &__subtitle
+    color: #ffffff
+    font-size: 18px
+    font-weight: 400
+    @media (max-width 500px)
+      font-size 14px
+  &__cont
+    background-color #ffffff
+    height 100%
+    display: flex
+    flex-direction column
+    justify-content center
+    &_int
+      padding 20px
+      background-color #f0ecf3
+.modal-item
+  padding 30px
+  &:not(:last-child)
+    border-bottom 1px solid rgba(176,176,176,0.22);
+  &_int
+    padding 20px
+    box-shadow: -2px 7px 6px rgba(0, 0, 0, 0.02);
+    border-radius: 5px;
+    background-color #fff
+    &:not(:last-child)
+      border-bottom none
+      margin-bottom: 15px
+  &__img
+    img
+      width: 135px
+      height: 135px
+      border-radius 50%
+      display: block
+      object-fit cover
+    @media (max-width 415px)
+      display: flex
+      justify-content center
+      img
+        margin-bottom: 10px
+  &__title
+    color $dirty-purple
+    font-size 1.5rem
+    @media (max-width 415px)
+      text-align center
+  &__center
+    padding 0 20px
+    @media (max-width 768px)
+      padding 0
+  &__txt
+    font-size: 1rem
+    line-height: 1.3
+    color: #88898c
+    font-weight: 400
+  &__time
+    cursor default
+    i
+      color: #5e3d55
+      font-size 1rem
+      margin-right: 10px
+    span
+      color: #8a8a8a
+      font-weight: 500;
+
+  .like-block
+    padding 0 30px 0 10px
+    display: flex
+    height: 100%
+    align-items: center
+    @media (max-width 768px)
+      padding 0
+    @media (max-width 415px)
+      display: flex
+      justify-content center
+      padding 20px 0
+    .button-icon
+      i
+        width: 40px;
+        height: 40px;
+        color $dirty-purple
+        background-color #ececec
+        display: flex
+        align-items center
+        justify-content center
+        border-radius 50%
+        font-size 1.3rem
+        transition all 0.2s ease
+      &:not(:last-child)
+        margin-right: 15px
+      &:hover i
+        color #ffffff
+        background-color $dirty-purple
+  .modal-location
+    cursor default
+    i
+      color: #5e3d55
+      font-size 1.2rem
+      margin-right: 10px
+    span
+      font-size 1.1rem
+      color: #cacaca;
+      font-weight: 500;
+  .modal-status
+    display: flex
+    flex-wrap: wrap;
+    cursor default
+    &__item
+      display: flex
+      align-items center
+      font-weight: 500
+      i
+        display: flex
+        font-size 1rem
+        margin-right: 9px
+        padding-bottom: 3px
+      span
+        font-size 1.1rem
+      &:not(:last-child)
+        margin-right: 15px
+      &_red
+        color: #ed7064
+      &_orange
+        color: #f4ac2e
+
+  .modal-services
+    margin-right: 10px
+    &__item
+      display: flex
+      justify-content space-between
+      font-size 1rem
+      color: #5e3d55
+      padding-bottom 8px
+      width 100%
+      border-bottom 1px dashed #5e3d55
+      .pr
+        font-weight 500
+      &:not(:last-child)
+        margin-bottom: 10px
+      &_more
+        border-bottom none
+        text-align right
+        a
+          color: #5e3d55
+
+.modal-btn
+  cursor: pointer
+  width: 130px
+  height: 40px
+  border-radius: 20px
+  text-transform uppercase
+  font-size 1rem
+  display inline-flex
+  align-items center
+  justify-content center
+  border transparent
+  outline none
+  @media (max-width 415px)
+    display: flex
+    width 100%
+    font-size 0.8rem
+  &_pink
+    color: #5e3d55
+    background-color: #e9d4e6
+    &:hover
+      background-color: #e2abda
+  &_purple
+    color #ffffff
+    background-color: #5e3d55
+    &:hover
+      background-color #905d82
+  &_grey
+    color: #5e3d55
+    background-color: #e8e8e8;
+    &:hover
+      background-color: #dedede
+
+.modal__btns
+  display: flex
+  flex-direction: column
+
+@media (max-width 768px)
+  .modal__btns
+    flex-direction: row
+    align-items: flex-end
+    .modal-btn:not(:first-child)
+      margin-left: 5px
+
+@media (max-width 1200px)
+  .modal_interest .modal__btns
+    flex-direction: row
+    align-items: flex-end
+    .modal-btn:not(:first-child)
+      margin-left: 5px

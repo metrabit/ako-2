@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>Post Job</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="js/chosen/chosen.min.css"/>
+    <script src="js/chosen/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/tags-input/jquery.tagsinput.js"></script>
+    <link type="text/css" rel="stylesheet" href="js/tags-input/jquery.tagsinput.css"/>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper wrapper_dashboard">
+            <div class="sidebar"><a class="sidebar__logo" href="#"><img src="img/logo.png" alt="logo"/></a>
+              <ul class="sidebar__nav">
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-tachometer-alt"></i></span><span class="menu-txt">Home</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="far fa-calendar-alt"></i></span><span class="menu-txt">Appointment</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-users"></i></span><span class="menu-txt">Request</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="far fa-envelope"></i></span><span class="menu-txt">Messages</span></a></li>
+                <li class="active"><a href="#"><span class="menu-icon"><i class="far fa-heart"></i></span><span class="menu-txt">Favourites</span></a></li>
+                <li><a href="#"><span class="menu-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22">
+                        <path data-name="layer1" fill="none" stroke="#5e3d55" stroke-miterlimit="10" stroke-width="4" d="M10 10h30" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer2" d="M32 56H10a8 8 0 0 1-8-8V10" fill="none" stroke="#5e3d55" stroke-miterlimit="10" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer2" d="M42 2H10a8 8 0 0 0 0 16h32v25" fill="none" stroke="#5e3d55" stroke-miterlimit="10" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"></path>
+                        <path data-name="layer1" fill="none" stroke="#5e3d55" stroke-miterlimit="10" stroke-width="3" d="M55 30L34.2 50.7 29.8 62l11.4-4.3L62 37l-7-7zM34.2 50.7l7 7" stroke-linejoin="round" stroke-linecap="round"></path>
+                      </svg></span><span class="menu-txt">Jobs</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-file-alt"></i></span><span class="menu-txt">Invoices</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-cog"></i></span><span class="menu-txt">Settings</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="far fa-question-circle"></i></span><span class="menu-txt">Help</span></a></li>
+                <li><a href="#"><span class="menu-icon"><i class="fas fa-sign-out-alt"></i></span><span class="menu-txt">Switch Account</span></a></li>
+              </ul>
+            </div>
+      <div class="page">
+        <header class="header-dash">
+          <div class="header-dash__left">
+            <div class="header-dash-icon active"><span></span><span></span><span></span></div>
+            <div class="header-title">Select Availability</div>
+          </div>
+          <div class="header-dash__right">
+            <div class="header-menu dropdown">
+              <button class="button drop-btn dropdown__trig">
+                <div class="drop-btn__name">John Doe</div>
+                <div class="drop-btn__img"><img src="img/img-1.png" alt="avatar"/></div>
+              </button>
+              <div class="header-menu__cont dropdown__cont">
+                <ul class="header-menu__list">
+                  <li><a href="#">Edit profile</a></li>
+                  <li><a href="#">Log Out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </header>
+        <div class="container container_dash">
+          <div class="title-container has-text-centered">
+            <h2 class="title-def">Post a Job</h2>
+            <p class="subtitle-def m-t-20">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="columns is-variable is-6">
+            <div class="column is-half">
+              <label class="label label_def">Enter the name of your job post</label>
+              <div class="control m-t-10">
+                <input class="input input_def" type="text" placeholder="Eg. Need a photographer for a wedding shoot"/>
+              </div>
+            </div>
+          </div>
+          <div class="columns is-multiline is-variable is-6">
+            <div class="column is-half">
+              <label class="label label_def">Category of Job</label>
+              <div class="control m-t-10">
+                <select class="select-chosen">
+                  <option selected="" disabled="">Select a Category</option>
+                  <option>Fashion Styling</option>
+                  <option>Fashion Designing</option>
+                  <option>Wardrobe Consulting</option>
+                  <option>Photography</option>
+                  <option>Personal Shopping</option>
+                  <option>Fine Art</option>
+                  <option>Jewelry Design</option>
+                  <option>Interior Design</option>
+                  <option>Furniture Design</option>
+                </select>
+              </div>
+            </div>
+            <div class="column is-half">
+              <label class="label label_def">Sub-category</label>
+              <div class="control m-t-10">
+                <select class="select-chosen">
+                  <option selected="" disabled="">Select a Category</option>
+                  <option>Fashion Styling</option>
+                  <option>Fashion Designing</option>
+                  <option>Wardrobe Consulting</option>
+                  <option>Photography</option>
+                  <option>Personal Shopping</option>
+                  <option>Fine Art</option>
+                  <option>Jewelry Design</option>
+                  <option>Interior Design</option>
+                  <option>Furniture Design</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="m-t-50">
+            <label class="label label_def">Description</label>
+            <div class="control">
+              <textarea class="textarea textarea_def textarea_def_sub"></textarea>
+              <div class="textarea_sub"><span>A good description includes:</span>
+                <ul>
+                  <li>1. What the deliverable is,</li>
+                  <li>2. Type of freelancer you're looking for,</li>
+                  <li>3. Anything unique about the project or team</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="columns is-multiline is-variable is-6 m-t-50">
+            <div class="column is-half">
+              <label class="label label_def">Location</label>
+              <div class="control m-t-10">
+                <input class="input input_def" type="text" placeholder="Location"/>
+              </div>
+            </div>
+            <div class="column is-half">
+              <label class="label label_def">Date Needed</label>
+              <div class="control has-icons-right m-t-10">
+                <input class="input input_def" type="date" placeholder="DD / MM / YY"/><span class="icon is-small is-right">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                      <g fill="#6A7084" fill-rule="nonzero">
+                          <path d="M13.75.933H12v-.7C12 .104 11.888 0 11.75 0H10c-.138 0-.25.104-.25.233v.7h-5.5v-.7C4.25.104 4.138 0 4 0H2.25C2.112 0 2 .104 2 .233v.7H.25c-.138 0-.25.105-.25.234V13.767c0 .129.112.233.25.233h13.5c.138 0 .25-.104.25-.233V1.167c0-.13-.112-.234-.25-.234zm-3.5-.466h1.25v1.4h-1.25v-1.4zm-7.75 0h1.25v1.4H2.5v-1.4zM.5 1.4H2v.7c0 .129.112.233.25.233H4c.138 0 .25-.104.25-.233v-.7h5.5v.7c0 .129.112.233.25.233h1.75c.138 0 .25-.104.25-.233v-.7h1.5v2.1H.5V1.4zm0 12.133V3.967h13v9.566H.5z"/>
+                          <path d="M8.965 5.833H2.334v7h9.332V5.833H8.966zm-1.72.483h1.72v1.69h-1.72v-1.69zm1.72 3.862h-1.72v-1.69h1.72v1.69zm-3.93-1.69h1.72v1.69h-1.72v-1.69zm0-2.172h1.72v1.69h-1.72v-1.69zm-2.21 0h1.719v1.69h-1.72v-1.69zm0 2.173h1.719v1.69h-1.72v-1.69zm1.719 3.862h-1.72v-1.69h1.72v1.69zm2.21 0H5.035v-1.69h1.72v1.69zm2.21 0H7.247v-1.69h1.719v1.69zm2.211 0H9.456v-1.69h1.72v1.69zm0-2.173H9.456v-1.69h1.72v1.69zm0-3.862v1.69H9.456v-1.69h1.72z"/>
+                      </g>
+                  </svg></span>
+              </div>
+            </div>
+          </div>
+          <div class="columns is-multiline is-variable is-6 m-t-50">
+            <div class="column is-half">
+              <label class="label label_def">Budget</label>
+              <div class="control">
+                <input class="input input_def" type="text" placeholder="$5000 - $10000"/>
+              </div>
+            </div>
+            <div class="column is-half">
+              <label class="label label_def">Urgency</label>
+              <div class="columns is-variable is-2">
+                <div class="column is-one-third">
+                  <label class="label-button">
+                    <input class="label-button__input" type="radio" name="urg"/>
+                    <div class="label-button__cont">Noraml</div>
+                  </label>
+                </div>
+                <div class="column is-one-third">
+                  <label class="label-button">
+                    <input class="label-button__input" type="radio" name="urg" checked="checked"/>
+                    <div class="label-button__cont">High</div>
+                  </label>
+                </div>
+                <div class="column is-one-third">
+                  <label class="label-button">
+                    <input class="label-button__input" type="radio" name="urg"/>
+                    <div class="label-button__cont has-text-centered">Ugrent<br>need today</div>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-t-90">
+            <h2 class="title-def">Other preferences</h2>
+            <div class="columns is-multiline is-variable is-6 m-t-30">
+              <div class="column is-half">
+                <label class="label label_def">Experience level</label>
+                <div class="columns is-variable is-1">
+                  <div class="column is-one-third">
+                    <label class="label-button">
+                      <input class="label-button__input" type="radio" name="exp" checked="checked"/>
+                      <div class="label-button__cont">Professinal</div>
+                    </label>
+                  </div>
+                  <div class="column is-one-third">
+                    <label class="label-button">
+                      <input class="label-button__input" type="radio" name="exp"/>
+                      <div class="label-button__cont">Intermediate</div>
+                    </label>
+                  </div>
+                  <div class="column is-one-third">
+                    <label class="label-button">
+                      <input class="label-button__input" type="radio" name="exp"/>
+                      <div class="label-button__cont">Expert</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+              <div class="column is-half">
+                <label class="label label_def">Skill Type</label>
+                <div class="columns is-variable is-2">
+                  <div class="column is-half">
+                    <label class="label-button">
+                      <input class="label-button__input" type="radio" name="skills"/>
+                      <div class="label-button__cont">Professinal</div>
+                    </label>
+                  </div>
+                  <div class="column is-half">
+                    <label class="label-button">
+                      <input class="label-button__input" type="radio" name="skills" checked="checked"/>
+                      <div class="label-button__cont">Self-Taught</div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="m-t-90 has-text-centered">
+            <button class="button button_pr m-w-160">Post</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+html(lang="en")
+    - var title = 'index'
+    include ../blocks/head
+    body
+        .wrapper
+            include ../blocks/header
+            +header1
+            section.header-tabs.tabs-sec
+                .container
+                    .columns.is-mobile.is-multiline
+                        .column
+                            .tab-content(data-tab="tab1")
+                                h3.title-def Portrait Photographers
+                                p.txt-def.m-t-40 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.
+                                p.txt-def.m-t-20 Nullam tincidunt magna non magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.
+                                p.txt-def.m-t-20 Vivamus dapibus et ipsum non fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.
+                            .tab-content.hidden-tab(data-tab="tab2")
+                                h3.title-def Headshot Photographers
+                                p.txt-def.m-t-40 Lsdfsdfdfdfsgdsfge vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.
+                                p.txt-def.m-t-20 sdfgsdfgsdfgsdfg magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.
+                                p.txt-def.m-t-20 Vidfgsdfgsdfgnon fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.
+                            .tab-content.hidden-tab(data-tab="tab3")
+                                h3.title-def Fashion Photographers
+                                p.txt-def.m-t-40 Lsdfsdfdfdfsgdsfge vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.
+                                p.txt-def.m-t-20 sdfgsdfgsdfgsdfg magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.
+                                p.txt-def.m-t-20 Vidfgsdfgsdfgnon fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.
+                            .tab-content.hidden-tab(data-tab="tab4")
+                                h3.title-def Corporate Photographers
+                                p.txt-def.m-t-40 Lsdfsdfdfdfsgdsfge vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.
+                                p.txt-def.m-t-20 sdfgsdfgsdfgsdfg magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.
+                                p.txt-def.m-t-20 Vidfgsdfgsdfgnon fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.
+                            .tab-content.hidden-tab(data-tab="tab5")
+                                h3.title-def Find More
+                                p.txt-def.m-t-40 Lsdfsdfdfdfsgdsfge vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.
+                                p.txt-def.m-t-20 sdfgsdfgsdfgsdfg magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.
+                                p.txt-def.m-t-20 Vidfgsdfgsdfgnon fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.
+
+                            .m-t-40
+                                .columns.is-mobile.is-multiline
+                                    .column.is-half-desktop.is-half-tablet.is-full-mobile
+                                        button(data-trig-tab="tab1").button.button_tab.active Portrait Photographers
+                                    .column.is-half-desktop.is-half-tablet.is-full-mobile
+                                        button(data-trig-tab="tab2").button.button_tab Headshot Photographers
+                                    .column.is-half-desktop.is-half-tablet.is-full-mobile
+                                        button(data-trig-tab="tab3").button.button_tab Fashion Photographers
+                                    .column.is-half-desktop.is-half-tablet.is-full-mobile
+                                        button(data-trig-tab="tab4").button.button_tab Corporate Photographers
+                                    .column.is-half-desktop.is-half-tablet.is-full-mobile
+                                        button(data-trig-tab="tab5").button.button_tab Find More
+
+                        .column.tab-content__img
+                            .tab-content(data-tab="tab1")
+                                img(src='img/top-img.png' alt='top-img')
+                            .tab-content.hidden-tab(data-tab="tab2")
+                                img(src='img/top-img.png' alt='top-img')
+                            .tab-content.hidden-tab(data-tab="tab3")
+                                img(src='img/top-img.png' alt='top-img')
+                            .tab-content.hidden-tab(data-tab="tab4")
+                                img(src='img/top-img.png' alt='top-img')
+                            .tab-content.hidden-tab(data-tab="tab5")
+                                img(src='img/top-img.png' alt='top-img')
+            section.popular-services
+                .container
+                    h3.title-def Popular photography services in your location
+                    p.subtitle-def.m-t-20 From House Painting To Personal Training, We Bring You The Right Pros For Every<br> Project On Your List.
+                    .right-btn.m-b-40
+                        button.button.button_pr Explore all freelancers
+                    .service-slider
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+
+                        .service-slider-item
+                            img(src="img/img-1.png" alt='img-1')
+                            .service-slider-item__info
+                                .columns.is-gapless.is-mobile
+                                    .column.is-half
+                                        .name Ryan Photographer
+                                        .location
+                                            i.fas.fa-map-marker-alt
+                                            span 2 miles  away
+                                    .column.has-text-centered.flex-end
+                                        button.button.button_book Book
+            section.top-freelancers.tabs-sec
+                .container
+                    .white-block
+                        h3.title-def Popular photography services in your location
+                        p.subtitle-def.m-t-20 From House Painting To Personal Training, We Bring You The Right Pros For Every Project On Your List.
+                        .top-freelancers__item(data-tab="freelancer-1")
+                            .columns.is-mobile.is-multiline.is-variable.is-6
+                                .column.top-freelancers__img
+                                    img(src='img/bottom-tab.png' alt='top')
+                                    button.button.button_pr.m-w-160.mob-btn Book
+                                .column.is-hidden-mobile
+                                    h4.title-def Ryan, <span class="title-grey"> Fine arts</span>
+                                    .location
+                                        i.fas.fa-map-marker-alt
+                                        span 2 miles  away
+                                    p.txt-def.m-t-15 Ndfdfrta ligula, at eleifend erat scelerisque vel. Aenean non tortor in libero cursus maximus eget egestas neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lectus feugiat, semper lectus ut, lacinia ex. Integer dolor lectus,
+                                    .m-t-20.mob-center
+                                        button.button.button_pr.m-w-160 Book
+
+                        .top-freelancers__item(data-tab="freelancer-2").hidden-tab
+                            .columns.is-mobile.is-multiline.is-variable.is-6
+                                .column.top-freelancers__img
+                                    img(src='img/bottom-tab.png' alt='top')
+                                    button.button.button_pr.m-w-160.mob-btn Book
+                                .column.is-hidden-mobile
+                                    h4.title-def Byran, <span class="title-grey"> Fine arts</span>
+                                    .location
+                                        i.fas.fa-map-marker-alt
+                                        span 2 miles  away
+                                    p.txt-def.m-t-15 34343434Nam ultrices porta ligula, at eleifend erat scelerisque vel. Aenean non tortor in libero cursus maximus eget egestas neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lectus feugiat, semper lectus ut, lacinia ex. Integer dolor lectus,
+                                    .m-t-20.mob-center
+                                        button.button.button_pr.m-w-160 Book
+
+                        .top-freelancers__item(data-tab="freelancer-3").hidden-tab
+                            .columns.is-mobile.is-multiline.is-variable.is-6
+                                .column.top-freelancers__img
+                                    img(src='img/bottom-tab.png' alt='top')
+                                    button.button.button_pr.m-w-160.mob-btn Book
+                                .column.is-hidden-mobile
+                                    h4.title-def Gyran, <span class="title-grey"> Fine arts</span>
+                                    .location
+                                        i.fas.fa-map-marker-alt
+                                        span 2 miles  away
+                                    p.txt-def.m-t-15 N9349034am ultrices porta ligula, at eleifend erat scelerisque vel. Aenean non tortor in libero cursus maximus eget egestas neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lectus feugiat, semper lectus ut, lacinia ex. Integer dolor lectus,
+                                    .m-t-20.mob-center
+                                        button.button.button_pr.m-w-160 Book
+
+                        .top-freelancers__item(data-tab="freelancer-4").hidden-tab
+                            .columns.is-mobile.is-multiline.is-variable.is-6
+                                .column.top-freelancers__img
+                                    img(src='img/bottom-tab.png' alt='top')
+                                    button.button.button_pr.m-w-160.mob-btn Book
+                                .column.is-hidden-mobile
+                                    h4.title-def Dyran, <span class="title-grey"> Fine arts</span>
+                                    .location
+                                        i.fas.fa-map-marker-alt
+                                        span 2 miles  away
+                                    p.txt-def.m-t-15 Nam ultrices porta ligula, at eleifend erat scelerisque vel. Aenean non tortor in libero cursus maximus eget egestas neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lectus feugiat, semper lectus ut, lacinia ex. Integer dolor lectus,
+                                    .m-t-20.mob-center
+                                        button.button.button_pr.m-w-160 Book
+
+                    .brown-block
+                        .columns.is-mobile.align-end
+                            .column
+                                button(data-trig-tab="freelancer-1").button.button_featured.active Ryan<br> Fine Arts
+                            .column
+                                button(data-trig-tab="freelancer-2").button.button_featured Steve<br> Designer
+                            .column
+                                button(data-trig-tab="freelancer-3").button.button_featured Bart<br> Designer
+                            .column
+                                button(data-trig-tab="freelancer-4").button.button_featured Jogn<br> Designe
+            section.profiles
+                .container
+                    h3.title-def Freelancer profiles
+                    p.subtitle-def.m-t-20 From House Painting To Personal Training, We Bring You The Right Pros For Every<br> Project On Your List.
+                    .right-btn
+                        button.button.button_pr Explore all freelancers
+                    .columns.is-multiline.is-centered.is-mobile.is-variable.is-2.profiles-items.m-t-40
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-1.png" alt='img-1')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-2.png" alt='img-2')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-3.png" alt='img-3')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-4.png" alt='img-4')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-5.png" alt='img-5')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-6.png" alt='img-6')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-7.png" alt='img-7')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-8.png" alt='img-8')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-9.png" alt='img-9')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+                        .column.is-narrow
+                            .service-slider-item
+                                img(src="img/img-10.png" alt='img-10')
+                                .service-slider-item__info
+                                    .columns.is-gapless.is-mobile
+                                        .column.is-half
+                                            .name Ryan Photographer
+                                            .location
+                                                i.fas.fa-map-marker-alt
+                                                span 2 miles  away
+                                        .column.has-text-centered.flex-end
+                                            button.button.button_book Book
+
+            footer.footer
+                .container
+                    .footer__links
+                        .columns
+                            .column
+                                ul.footer__links-list
+                                    li
+                                        a(href="#") How it works
+                                    li
+                                        a(href="#") Services
+                                    li
+                                        a(href="#") Mobile <sup>BETA</sup>
+                            .column
+                                ul.footer__links-list
+                                    li
+                                        a(href="#") Press inquiries
+                                    li
+                                        a(href="#") About us
+                                    li
+                                        a(href="#") BLOG
+                            .column
+                                ul.footer__links-list
+                                    li
+                                        a(href="#") Support
+                                    li
+                                        a(href="#") Contact us
+                                    li
+                                        a(href="#") FAQs
+                                    li.social
+                                        a(href="#")
+                                            i.fab.fa-instagram
+                                        a(href="#")
+                                            i.fab.fa-twitter
+                                        a(href="#")
+                                            i.fab.fa-facebook-f
+                    .footer__bot
+                        .copy © 2019 AKO Services Inc.
+                        .bot-links
+                            a(href="#") Terms of Use
+                            a(href="#") Privacy Policy

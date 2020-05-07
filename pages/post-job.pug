@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+html(lang="en")
+    - var title = 'Post Job'
+    include ../blocks/head
+    body
+        .wrapper.wrapper_dashboard
+            include ../blocks/sidebar
+            +sidebar_client
+            .page
+                header.header-dash
+                    .header-dash__left
+                        .header-dash-icon.active
+                            span
+                            span
+                            span
+                        .header-title Select Availability
+                    .header-dash__right
+                        .header-menu.dropdown
+                            button.button.drop-btn.dropdown__trig
+                                .drop-btn__name John Doe
+                                .drop-btn__img
+                                    img(src='img/img-1.png' alt='avatar')
+                            .header-menu__cont.dropdown__cont
+                                ul.header-menu__list
+                                    li
+                                        a(href='#') Edit profile
+                                    li
+                                        a(href='#') Log Out
+                .container.container_dash
+                    .title-container.has-text-centered
+                        h2.title-def Post a Job
+                        p.subtitle-def.m-t-20 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    .columns.is-variable.is-6
+                        .column.is-half
+                            label.label.label_def Enter the name of your job post
+                            .control.m-t-10
+                                input.input.input_def(type='text' placeholder='Eg. Need a photographer for a wedding shoot')
+                    .columns.is-multiline.is-variable.is-6
+                        .column.is-half
+                            label.label.label_def Category of Job
+                            .control.m-t-10
+                                select.select-chosen
+                                    option(selected='' disabled='') Select a Category
+                                    option Fashion Styling
+                                    option Fashion Designing
+                                    option Wardrobe Consulting
+                                    option Photography
+                                    option Personal Shopping
+                                    option Fine Art
+                                    option Jewelry Design
+                                    option Interior Design
+                                    option Furniture Design
+                        .column.is-half
+                            label.label.label_def Sub-category
+                            .control.m-t-10
+                                select.select-chosen
+                                    option(selected='' disabled='') Select a Category
+                                    option Fashion Styling
+                                    option Fashion Designing
+                                    option Wardrobe Consulting
+                                    option Photography
+                                    option Personal Shopping
+                                    option Fine Art
+                                    option Jewelry Design
+                                    option Interior Design
+                                    option Furniture Design
+                    .m-t-50
+                        label.label.label_def Description
+                        .control
+                            textarea.textarea.textarea_def.textarea_def_sub
+                            .textarea_sub
+                                span A good description includes:
+                                ul
+                                    li 1. What the deliverable is,
+                                    li 2. Type of freelancer you're looking for,
+                                    li 3. Anything unique about the project or team
+                    .columns.is-multiline.is-variable.is-6.m-t-50
+                        .column.is-half
+                            label.label.label_def Location
+                            .control.m-t-10
+                                input.input.input_def(type='text' placeholder='Location')
+                        .column.is-half
+                            label.label.label_def Date Needed
+                            .control.has-icons-right.m-t-10
+                                input.input.input_def(type='date' placeholder='DD / MM / YY')
+                                span.icon.is-small.is-right
+                                    | <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14">
+                                    |     <g fill="#6A7084" fill-rule="nonzero">
+                                    |         <path d="M13.75.933H12v-.7C12 .104 11.888 0 11.75 0H10c-.138 0-.25.104-.25.233v.7h-5.5v-.7C4.25.104 4.138 0 4 0H2.25C2.112 0 2 .104 2 .233v.7H.25c-.138 0-.25.105-.25.234V13.767c0 .129.112.233.25.233h13.5c.138 0 .25-.104.25-.233V1.167c0-.13-.112-.234-.25-.234zm-3.5-.466h1.25v1.4h-1.25v-1.4zm-7.75 0h1.25v1.4H2.5v-1.4zM.5 1.4H2v.7c0 .129.112.233.25.233H4c.138 0 .25-.104.25-.233v-.7h5.5v.7c0 .129.112.233.25.233h1.75c.138 0 .25-.104.25-.233v-.7h1.5v2.1H.5V1.4zm0 12.133V3.967h13v9.566H.5z"/>
+                                    |         <path d="M8.965 5.833H2.334v7h9.332V5.833H8.966zm-1.72.483h1.72v1.69h-1.72v-1.69zm1.72 3.862h-1.72v-1.69h1.72v1.69zm-3.93-1.69h1.72v1.69h-1.72v-1.69zm0-2.172h1.72v1.69h-1.72v-1.69zm-2.21 0h1.719v1.69h-1.72v-1.69zm0 2.173h1.719v1.69h-1.72v-1.69zm1.719 3.862h-1.72v-1.69h1.72v1.69zm2.21 0H5.035v-1.69h1.72v1.69zm2.21 0H7.247v-1.69h1.719v1.69zm2.211 0H9.456v-1.69h1.72v1.69zm0-2.173H9.456v-1.69h1.72v1.69zm0-3.862v1.69H9.456v-1.69h1.72z"/>
+                                    |     </g>
+                                    | </svg>
+                    .columns.is-multiline.is-variable.is-6.m-t-50
+                        .column.is-half
+                            label.label.label_def Budget
+                            .control
+                                input.input.input_def(type='text' placeholder='$5000 - $10000')
+                        .column.is-half
+                            label.label.label_def Urgency
+                            .columns.is-variable.is-2
+                                .column.is-one-third
+                                    label.label-button
+                                        input.label-button__input(type='radio' name='urg')
+                                        .label-button__cont Noraml
+                                .column.is-one-third
+                                    label.label-button
+                                        input.label-button__input(type='radio' name='urg' checked)
+                                        .label-button__cont High
+                                .column.is-one-third
+                                    label.label-button
+                                        input.label-button__input(type='radio' name='urg')
+                                        .label-button__cont.has-text-centered Ugrent<br>need today
+                    .m-t-90
+                        h2.title-def Other preferences
+                        .columns.is-multiline.is-variable.is-6.m-t-30
+                            .column.is-half
+                                label.label.label_def Experience level
+                                .columns.is-variable.is-1
+                                    .column.is-one-third
+                                        label.label-button
+                                            input.label-button__input(type='radio' name='exp' checked)
+                                            .label-button__cont Professinal
+                                    .column.is-one-third
+                                        label.label-button
+                                            input.label-button__input(type='radio' name='exp')
+                                            .label-button__cont Intermediate
+                                    .column.is-one-third
+                                        label.label-button
+                                            input.label-button__input(type='radio' name='exp')
+                                            .label-button__cont Expert
+                            .column.is-half
+                                label.label.label_def Skill Type
+                                .columns.is-variable.is-2
+                                    .column.is-half
+                                        label.label-button
+                                            input.label-button__input(type='radio' name='skills')
+                                            .label-button__cont Professinal
+                                    .column.is-half
+                                        label.label-button
+                                            input.label-button__input(type='radio' name='skills' checked)
+                                            .label-button__cont Self-Taught
+                    .m-t-90.has-text-centered
+                        button.button.button_pr.m-w-160 Post

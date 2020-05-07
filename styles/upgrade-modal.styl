@@ -1,0 +1,99 @@
+.modal_upgrade .modal-content
+  max-width 850px
+  width 100%
+  display: flex
+  flex-direction: column
+  height: auto
+  border-radius: 10px
+  .modal-card-body
+    background-color: #faf7fc
+    padding 0 70px 20px
+  .check-list
+    &_pl
+      padding-left: 20px;
+    li
+      display: flex
+      &:not(:last-child)
+        margin-bottom: 10px
+      .check
+        padding-top: 4px
+        min-width 25px
+      .plans-txt
+        color: #333333
+        font-size 18px
+    .hide-more
+      &_show
+        display: none
+
+  @media (max-width 1000px)
+    width calc(100% - 100px)
+    .help-cont
+      text-align center
+    .button
+      margin-top: 15px
+  @media (max-width 768px)
+    .modal-block__title
+      min-height: 120px;
+    .check-list
+      padding-left 0
+      li
+      .hide-more
+        &_hide
+          display: none
+        &_show
+          display: flex
+    .text-center-xs
+      text-align center
+    .items-between
+      flex-direction column
+      justify-content: center
+      text-align: center
+
+  @media (max-width 500px)
+    width calc(100% - 70px)
+    max-height 70vh
+    z-index 1
+    .modal-block__title
+      padding: 10px
+    .modal-card-body
+      padding 20px
+    .check-list
+      li
+        .plans-txt
+          color: #333333
+          font-size 14px
+
+.underline-link
+  color: #454545;
+  font-size: 14px
+  font-weight: 400
+  border-bottom 1px solid #454545
+  &:hover
+    color: #3273dc
+    border-bottom 1px solid #3273dc
+
+.premium-includes
+  position relative
+  width 100%
+  height 100%
+  margin: 20px auto
+  max-width: 500px
+  border-radius: 5px
+  padding 20px
+  box-shadow: 3px 12px 29px rgba(0, 0, 0, 0.14)
+  background-color: #ffffff
+  overflow hidden
+
+.upgrade-title
+  color: #5e3d55
+  font-size: 23px
+  font-weight: 700
+  border-bottom: 1px solid rgba(72, 75, 127, 0.1);
+
+.items-between
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  align-items: center
+
+

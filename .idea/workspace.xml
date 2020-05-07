@@ -1,0 +1,704 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a35a02e6-f0a9-44d1-b89b-ede7567bb649" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ako" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/styles/inputs.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="34" selection-end-column="16" />
+              <folding>
+                <element signature="e#15#723#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/customers.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-76">
+              <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+              <folding>
+                <element signature="n#svg#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#div#2;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/styles/customers.styl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="519">
+              <caret line="468" column="23" selection-start-line="468" selection-start-column="23" selection-end-line="468" selection-end-column="23" />
+              <folding>
+                <element signature="e#36#122#0" />
+                <element signature="e#451#513#0" />
+                <element signature="e#141#1096#0" />
+                <element signature="e#808#865#0" />
+                <element signature="e#141#532#0" />
+                <element signature="e#1241#1315#0" />
+                <element signature="e#473#954#0" />
+                <element signature="e#2104#2814#0" />
+                <element signature="e#5524#5564#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pages/post-job.pug">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="91" column="44" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="91" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/script.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="614">
+              <caret line="235" column="91" selection-start-line="235" selection-start-column="91" selection-end-line="235" selection-end-column="91" />
+              <folding>
+                <element signature="e#83#285#0" />
+                <element signature="e#347#769#0" />
+                <element signature="e#815#2085#0" />
+                <element signature="e#2120#3104#0" />
+                <element signature="e#3138#4419#0" />
+                <element signature="e#5100#5510#0" />
+                <element signature="e#5552#5785#0" />
+                <element signature="e#5832#5900#0" />
+                <element signature="e#5972#6417#0" />
+                <element signature="e#6475#6617#0" />
+                <element signature="e#6669#6728#0" />
+                <element signature="e#6790#6893#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Pug File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>job-btn</find>
+      <find>help-</find>
+      <find>button</find>
+      <find>other</find>
+      <find>.label-button</find>
+      <find>input</find>
+      <find>input_</find>
+      <find>label-</find>
+      <find>flex</find>
+      <find>align-items</find>
+      <find>pay</find>
+      <find>modal__bt</find>
+      <find>int</find>
+      <find>underline</find>
+      <find>txt</find>
+      <find>fullw</find>
+      <find>.label</find>
+      <find>data-trig-tab</find>
+      <find>label-radio</find>
+      <find>.label-radio</find>
+      <find>.button</find>
+      <find>89d0b49</find>
+      <find>2a501a4</find>
+      <find>296d1a1н</find>
+      <find>296d1a1</find>
+      <find>.add-favourite</find>
+      <find>los</find>
+      <find>date</find>
+      <find>emma</find>
+      <find>.btn-search</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/blocks/head.pug" />
+        <option value="$PROJECT_DIR$/blocks/sidebar.pug" />
+        <option value="$PROJECT_DIR$/pages/post-job.pug" />
+        <option value="$PROJECT_DIR$/pages/previous-job.pug" />
+        <option value="$PROJECT_DIR$/pages/listpage.pug" />
+        <option value="$PROJECT_DIR$/styles/listpage.styl" />
+        <option value="$PROJECT_DIR$/pages/index-new.pug" />
+        <option value="$PROJECT_DIR$/pages/index.pug" />
+        <option value="$PROJECT_DIR$/styles/service-detail.styl" />
+        <option value="$PROJECT_DIR$/pages/service-page.pug" />
+        <option value="$PROJECT_DIR$/pages/available-job.pug" />
+        <option value="$PROJECT_DIR$/pages/prices.pug" />
+        <option value="$PROJECT_DIR$/styles/post.styl" />
+        <option value="$PROJECT_DIR$/styles/billing-subs.styl" />
+        <option value="$PROJECT_DIR$/styles/upgrade-modal.styl" />
+        <option value="$PROJECT_DIR$/styles/modals.styl" />
+        <option value="$PROJECT_DIR$/styles/inputs.styl" />
+        <option value="$PROJECT_DIR$/styles/index.styl" />
+        <option value="$PROJECT_DIR$/pages/try-ako.pug" />
+        <option value="$PROJECT_DIR$/blocks/header.pug" />
+        <option value="$PROJECT_DIR$/styles/styles.styl" />
+        <option value="/private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/home-page.php" />
+        <option value="$PROJECT_DIR$/js/script.js" />
+        <option value="$PROJECT_DIR$/pages/customers.pug" />
+        <option value="$PROJECT_DIR$/styles/customers.styl" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="ako 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ako 2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ako 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ako 2" type="462c0819:PsiDirectoryNode" />
+              <item name="blocks" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ako 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ako 2" type="462c0819:PsiDirectoryNode" />
+              <item name="img" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ako 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ako 2" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ako 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ako 2" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ako 2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ako 2" type="462c0819:PsiDirectoryNode" />
+              <item name="styles" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a35a02e6-f0a9-44d1-b89b-ede7567bb649" name="Default Changelist" comment="" />
+      <created>1556784439846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1556784439846</updated>
+      <workItem from="1556784442455" duration="2139000" />
+      <workItem from="1556803271791" duration="1409000" />
+      <workItem from="1556811236676" duration="1753000" />
+      <workItem from="1557140999087" duration="343000" />
+      <workItem from="1557490568831" duration="4169000" />
+      <workItem from="1557732089242" duration="296000" />
+      <workItem from="1558355924189" duration="5899000" />
+      <workItem from="1558422595475" duration="1315000" />
+      <workItem from="1558435138960" duration="610000" />
+      <workItem from="1558599942606" duration="18885000" />
+      <workItem from="1558727576940" duration="2272000" />
+      <workItem from="1558988940917" duration="1134000" />
+      <workItem from="1559109033545" duration="5000" />
+      <workItem from="1559654828297" duration="1255000" />
+      <workItem from="1559717060530" duration="48000" />
+      <workItem from="1560236469366" duration="2288000" />
+      <workItem from="1560249340915" duration="16000" />
+      <workItem from="1560252380731" duration="10762000" />
+      <workItem from="1560322213058" duration="7607000" />
+      <workItem from="1560408454145" duration="7991000" />
+      <workItem from="1560423774790" duration="359000" />
+      <workItem from="1560424954906" duration="985000" />
+      <workItem from="1560456828725" duration="2364000" />
+      <workItem from="1588573333236" duration="20854000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="94758000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.1702432" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5012285" side_tool="true" weight="0.32331902" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32923833" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4987715" visible="true" weight="0.1702432" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" sideWeight="0.5012285" side_tool="true" weight="0.32331902" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32923833" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/post-job.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html" />
+    <entry file="file://$PROJECT_DIR$/pages/listpage.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="59" selection-start-line="6" selection-start-column="12" selection-end-line="20" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ako/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="565">
+          <caret line="62" column="37" lean-forward="true" selection-start-line="61" selection-start-column="20" selection-end-line="62" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/embed.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="45" column="22" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/sidebar.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="76" column="41" selection-start-line="62" selection-start-column="12" selection-end-line="76" selection-end-column="41" />
+          <folding>
+            <element signature="n#sidebar#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/listpage.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="681">
+          <caret line="60" column="21" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/service-detail.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/head.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="11" selection-end-column="115" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/resources/html5-schema/html5/phrase.rnc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="63" column="14" selection-start-line="63" selection-start-column="14" selection-end-line="63" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/available-job.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="114" column="12" selection-start-line="114" selection-start-column="12" selection-end-line="178" selection-end-column="86" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/prices.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="667">
+          <caret line="59" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/prices.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="571">
+          <caret line="68" column="4" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="68" selection-end-column="4" />
+          <folding>
+            <element signature="e#316#1215#0" />
+            <element signature="e#1443#1656#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/previous-job.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2576">
+          <caret line="112" column="40" selection-start-line="112" selection-start-column="40" selection-end-line="114" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/billing-subs.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding>
+            <element signature="e#153#205#0" />
+            <element signature="e#222#828#0" />
+            <element signature="e#848#1029#0" />
+            <element signature="e#1049#1570#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/modals.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1480">
+          <caret line="123" column="24" selection-start-line="123" selection-start-column="24" selection-end-line="123" selection-end-column="24" />
+          <folding>
+            <element signature="e#516#1484#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/upgrade-modal.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="4" selection-start-line="8" selection-start-column="4" selection-end-line="8" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/post.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5680">
+          <caret line="284" column="23" selection-start-line="284" selection-start-column="23" selection-end-line="284" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blocks/header.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="687">
+          <caret line="43" column="64" selection-start-line="43" selection-start-column="64" selection-end-line="43" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/index-new.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="7" selection-end-column="20" />
+          <folding>
+            <element signature="n#div#1;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#9;n#div#1;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/styles.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/arrow.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/try-ako.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="302">
+          <caret line="237" column="38" lean-forward="true" selection-start-line="234" selection-start-column="28" selection-end-line="237" selection-end-column="38" />
+          <folding>
+            <element signature="n#header#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/service-page.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-680">
+          <caret line="8" column="40" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="40" />
+          <folding>
+            <element signature="n#section#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#footer#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/zoom.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/index.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-200">
+          <caret line="289" selection-start-line="289" selection-end-line="289" />
+          <folding>
+            <element signature="e#385#781#0" />
+            <element signature="e#1208#1589#0" />
+            <element signature="e#1601#2015#0" />
+            <element signature="e#2027#2465#0" />
+            <element signature="e#2477#2849#0" />
+            <element signature="e#3311#3719#0" />
+            <element signature="e#3731#4097#0" />
+            <element signature="e#4109#4505#0" />
+            <element signature="e#4517#4925#0" />
+            <element signature="e#4937#5369#0" />
+            <element signature="e#5381#5747#0" />
+            <element signature="e#5759#6149#0" />
+            <element signature="e#6161#6584#0" />
+            <element signature="e#6739#6797#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/heart-2.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/inputs.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="34" selection-end-column="16" />
+          <folding>
+            <element signature="e#15#723#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/Vector.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/heart.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file:///private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/page-rental.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-28" />
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/content-single-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="12" lean-forward="true" selection-start-line="2" selection-start-column="12" selection-end-line="2" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/taxonomy-product_cat.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="70" lean-forward="true" selection-start-column="70" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/content-single-product 2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="18" column="12" lean-forward="true" selection-start-line="18" selection-start-column="12" selection-end-line="18" selection-end-column="12" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/archive-product.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="332">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/page-luxuryV2.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="392">
+          <caret line="27" column="61" lean-forward="true" selection-start-line="27" selection-start-column="61" selection-end-line="27" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/page-stores-all.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="26" column="40" lean-forward="true" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///private/var/folders/fv/jthsz_k16jn5bycxmcsm80840000gn/T/fz3temp-2/home-page.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="54" column="49" selection-start-line="54" selection-start-column="49" selection-end-line="54" selection-end-column="49" />
+          <folding>
+            <element signature="e#177#1614#0#HTML" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="e#14061#16888#0#HTML" />
+            <element signature="e#14349#16829#0#HTML" />
+            <element signature="e#16941#19821#0#HTML" />
+            <element signature="e#19874#22514#0#HTML" />
+            <element signature="e#22643#25430#0#HTML" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="614">
+          <caret line="235" column="91" selection-start-line="235" selection-start-column="91" selection-end-line="235" selection-end-column="91" />
+          <folding>
+            <element signature="e#83#285#0" />
+            <element signature="e#347#769#0" />
+            <element signature="e#815#2085#0" />
+            <element signature="e#2120#3104#0" />
+            <element signature="e#3138#4419#0" />
+            <element signature="e#5100#5510#0" />
+            <element signature="e#5552#5785#0" />
+            <element signature="e#5832#5900#0" />
+            <element signature="e#5972#6417#0" />
+            <element signature="e#6475#6617#0" />
+            <element signature="e#6669#6728#0" />
+            <element signature="e#6790#6893#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/post-job.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="91" column="44" lean-forward="true" selection-start-line="86" selection-start-column="36" selection-end-line="91" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pages/customers.pug">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-76">
+          <caret line="98" column="19" lean-forward="true" selection-start-line="98" selection-start-column="19" selection-end-line="98" selection-end-column="19" />
+          <folding>
+            <element signature="n#svg#0;n#div#0;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#1;n#div#0;n#section#0;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#1;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#div#0;n#section#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/styles/customers.styl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="519">
+          <caret line="468" column="23" selection-start-line="468" selection-start-column="23" selection-end-line="468" selection-end-column="23" />
+          <folding>
+            <element signature="e#36#122#0" />
+            <element signature="e#451#513#0" />
+            <element signature="e#141#1096#0" />
+            <element signature="e#808#865#0" />
+            <element signature="e#141#532#0" />
+            <element signature="e#1241#1315#0" />
+            <element signature="e#473#954#0" />
+            <element signature="e#2104#2814#0" />
+            <element signature="e#5524#5564#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

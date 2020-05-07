@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <title>index</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="js/chosen/chosen.min.css"/>
+    <script src="js/chosen/chosen.jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/tags-input/jquery.tagsinput.js"></script>
+    <link type="text/css" rel="stylesheet" href="js/tags-input/jquery.tagsinput.css"/>
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <div class="wrapper">
+            <header class="header">
+              <div class="header-top">
+                <div class="header-top__cont">
+                  <div class="header-top__logo"><a class="logo" href="#"><img src="img/logo.png" alt="logo"/></a><a class="white-logo" href="#"><img src="img/white-logo.png" alt="logo"/></a></div>
+                  <div class="header-top__menu">
+                    <button class="btn-open-nav"><span class="main-menu-btn-icon"></span></button>
+                    <ul class="header-top__list">
+                      <li><a class="dark-link is-uppercase" href="#">Sign up</a></li>
+                      <li><a class="dark-link is-uppercase" href="#">Log in</a></li>
+                      <li><a class="dark-link is-uppercase" href="#">Register as a freelancer</a></li>
+                      <li><a class="dark-link is-uppercase" href="#">Learn more</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </header>
+      <section class="header-tabs tabs-sec">
+        <div class="container">
+          <div class="columns is-mobile is-multiline">
+            <div class="column">
+              <div class="tab-content" data-tab="tab1">
+                <h3 class="title-def">Portrait Photographers</h3>
+                <p class="txt-def m-t-40">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse vitae vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.</p>
+                <p class="txt-def m-t-20">Nullam tincidunt magna non magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.</p>
+                <p class="txt-def m-t-20">Vivamus dapibus et ipsum non fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.</p>
+              </div>
+              <div class="tab-content hidden-tab" data-tab="tab2">
+                <h3 class="title-def">Headshot Photographers</h3>
+                <p class="txt-def m-t-40">Lsdfsdfdfdfsgdsfge vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.</p>
+                <p class="txt-def m-t-20">sdfgsdfgsdfgsdfg magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.</p>
+                <p class="txt-def m-t-20">Vidfgsdfgsdfgnon fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.</p>
+              </div>
+              <div class="tab-content hidden-tab" data-tab="tab3">
+                <h3 class="title-def">Fashion Photographers</h3>
+                <p class="txt-def m-t-40">Lsdfsdfdfdfsgdsfge vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.</p>
+                <p class="txt-def m-t-20">sdfgsdfgsdfgsdfg magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.</p>
+                <p class="txt-def m-t-20">Vidfgsdfgsdfgnon fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.</p>
+              </div>
+              <div class="tab-content hidden-tab" data-tab="tab4">
+                <h3 class="title-def">Corporate Photographers</h3>
+                <p class="txt-def m-t-40">Lsdfsdfdfdfsgdsfge vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.</p>
+                <p class="txt-def m-t-20">sdfgsdfgsdfgsdfg magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.</p>
+                <p class="txt-def m-t-20">Vidfgsdfgsdfgnon fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.</p>
+              </div>
+              <div class="tab-content hidden-tab" data-tab="tab5">
+                <h3 class="title-def">Find More</h3>
+                <p class="txt-def m-t-40">Lsdfsdfdfdfsgdsfge vestibulum quam. Proin euismod, ex at iaculis pellentesque, lectus lorem elementum sapien, a ultrices justo ipsum efficitur magna.</p>
+                <p class="txt-def m-t-20">sdfgsdfgsdfgsdfg magna ornare, in aliquet lacus porta. Donec hendrerit vel risus nec fringilla. Suspendisse quis augue non risus dapibus faucibus eu vitae orci. In feugiat finibus ornare. Praesent porttitor purus a sapien dignissim convallis. Fusce quis est dapibus purus cursus semper.</p>
+                <p class="txt-def m-t-20">Vidfgsdfgsdfgnon fermentum. Praesent accumsan placerat dui, a pulvinar libero pretium id. Donec sapien tortor, vehicula eu orci in, ultricies faucibus dui.</p>
+              </div>
+              <div class="m-t-40">
+                <div class="columns is-mobile is-multiline">
+                  <div class="column is-half-desktop is-half-tablet is-full-mobile">
+                    <button class="button button_tab active" data-trig-tab="tab1">Portrait Photographers</button>
+                  </div>
+                  <div class="column is-half-desktop is-half-tablet is-full-mobile">
+                    <button class="button button_tab" data-trig-tab="tab2">Headshot Photographers</button>
+                  </div>
+                  <div class="column is-half-desktop is-half-tablet is-full-mobile">
+                    <button class="button button_tab" data-trig-tab="tab3">Fashion Photographers</button>
+                  </div>
+                  <div class="column is-half-desktop is-half-tablet is-full-mobile">
+                    <button class="button button_tab" data-trig-tab="tab4">Corporate Photographers</button>
+                  </div>
+                  <div class="column is-half-desktop is-half-tablet is-full-mobile">
+                    <button class="button button_tab" data-trig-tab="tab5">Find More</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column tab-content__img">
+              <div class="tab-content" data-tab="tab1"><img src="img/top-img.png" alt="top-img"/></div>
+              <div class="tab-content hidden-tab" data-tab="tab2"><img src="img/top-img.png" alt="top-img"/></div>
+              <div class="tab-content hidden-tab" data-tab="tab3"><img src="img/top-img.png" alt="top-img"/></div>
+              <div class="tab-content hidden-tab" data-tab="tab4"><img src="img/top-img.png" alt="top-img"/></div>
+              <div class="tab-content hidden-tab" data-tab="tab5"><img src="img/top-img.png" alt="top-img"/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="popular-services">
+        <div class="container">
+          <h3 class="title-def">Popular photography services in your location</h3>
+          <p class="subtitle-def m-t-20">From House Painting To Personal Training, We Bring You The Right Pros For Every<br> Project On Your List.</p>
+          <div class="right-btn m-b-40">
+            <button class="button button_pr">Explore all freelancers</button>
+          </div>
+          <div class="service-slider">
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+              <div class="service-slider-item__info">
+                <div class="columns is-gapless is-mobile">
+                  <div class="column is-half">
+                    <div class="name">Ryan Photographer</div>
+                    <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  </div>
+                  <div class="column has-text-centered flex-end">
+                    <button class="button button_book">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="top-freelancers tabs-sec">
+        <div class="container">
+          <div class="white-block">
+            <h3 class="title-def">Popular photography services in your location</h3>
+            <p class="subtitle-def m-t-20">From House Painting To Personal Training, We Bring You The Right Pros For Every Project On Your List.</p>
+            <div class="top-freelancers__item" data-tab="freelancer-1">
+              <div class="columns is-mobile is-multiline is-variable is-6">
+                <div class="column top-freelancers__img"><img src="img/bottom-tab.png" alt="top"/>
+                  <button class="button button_pr m-w-160 mob-btn">Book</button>
+                </div>
+                <div class="column is-hidden-mobile">
+                  <h4 class="title-def">Ryan, <span class="title-grey"> Fine arts</span></h4>
+                  <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  <p class="txt-def m-t-15">Ndfdfrta ligula, at eleifend erat scelerisque vel. Aenean non tortor in libero cursus maximus eget egestas neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lectus feugiat, semper lectus ut, lacinia ex. Integer dolor lectus,</p>
+                  <div class="m-t-20 mob-center">
+                    <button class="button button_pr m-w-160">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-freelancers__item hidden-tab" data-tab="freelancer-2">
+              <div class="columns is-mobile is-multiline is-variable is-6">
+                <div class="column top-freelancers__img"><img src="img/bottom-tab.png" alt="top"/>
+                  <button class="button button_pr m-w-160 mob-btn">Book</button>
+                </div>
+                <div class="column is-hidden-mobile">
+                  <h4 class="title-def">Byran, <span class="title-grey"> Fine arts</span></h4>
+                  <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  <p class="txt-def m-t-15">34343434Nam ultrices porta ligula, at eleifend erat scelerisque vel. Aenean non tortor in libero cursus maximus eget egestas neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lectus feugiat, semper lectus ut, lacinia ex. Integer dolor lectus,</p>
+                  <div class="m-t-20 mob-center">
+                    <button class="button button_pr m-w-160">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-freelancers__item hidden-tab" data-tab="freelancer-3">
+              <div class="columns is-mobile is-multiline is-variable is-6">
+                <div class="column top-freelancers__img"><img src="img/bottom-tab.png" alt="top"/>
+                  <button class="button button_pr m-w-160 mob-btn">Book</button>
+                </div>
+                <div class="column is-hidden-mobile">
+                  <h4 class="title-def">Gyran, <span class="title-grey"> Fine arts</span></h4>
+                  <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  <p class="txt-def m-t-15">N9349034am ultrices porta ligula, at eleifend erat scelerisque vel. Aenean non tortor in libero cursus maximus eget egestas neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lectus feugiat, semper lectus ut, lacinia ex. Integer dolor lectus,</p>
+                  <div class="m-t-20 mob-center">
+                    <button class="button button_pr m-w-160">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="top-freelancers__item hidden-tab" data-tab="freelancer-4">
+              <div class="columns is-mobile is-multiline is-variable is-6">
+                <div class="column top-freelancers__img"><img src="img/bottom-tab.png" alt="top"/>
+                  <button class="button button_pr m-w-160 mob-btn">Book</button>
+                </div>
+                <div class="column is-hidden-mobile">
+                  <h4 class="title-def">Dyran, <span class="title-grey"> Fine arts</span></h4>
+                  <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                  <p class="txt-def m-t-15">Nam ultrices porta ligula, at eleifend erat scelerisque vel. Aenean non tortor in libero cursus maximus eget egestas neque. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc at lectus feugiat, semper lectus ut, lacinia ex. Integer dolor lectus,</p>
+                  <div class="m-t-20 mob-center">
+                    <button class="button button_pr m-w-160">Book</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="brown-block">
+            <div class="columns is-mobile align-end">
+              <div class="column">
+                <button class="button button_featured active" data-trig-tab="freelancer-1">Ryan<br> Fine Arts</button>
+              </div>
+              <div class="column">
+                <button class="button button_featured" data-trig-tab="freelancer-2">Steve<br> Designer</button>
+              </div>
+              <div class="column">
+                <button class="button button_featured" data-trig-tab="freelancer-3">Bart<br> Designer</button>
+              </div>
+              <div class="column">
+                <button class="button button_featured" data-trig-tab="freelancer-4">Jogn<br> Designe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="profiles">
+        <div class="container">
+          <h3 class="title-def">Freelancer profiles</h3>
+          <p class="subtitle-def m-t-20">From House Painting To Personal Training, We Bring You The Right Pros For Every<br> Project On Your List.</p>
+          <div class="right-btn">
+            <button class="button button_pr">Explore all freelancers</button>
+          </div>
+          <div class="columns is-multiline is-centered is-mobile is-variable is-2 profiles-items m-t-40">
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-1.png" alt="img-1"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-2.png" alt="img-2"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-3.png" alt="img-3"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-4.png" alt="img-4"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-5.png" alt="img-5"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-6.png" alt="img-6"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-7.png" alt="img-7"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-8.png" alt="img-8"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-9.png" alt="img-9"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="column is-narrow">
+              <div class="service-slider-item"><img src="img/img-10.png" alt="img-10"/>
+                <div class="service-slider-item__info">
+                  <div class="columns is-gapless is-mobile">
+                    <div class="column is-half">
+                      <div class="name">Ryan Photographer</div>
+                      <div class="location"><i class="fas fa-map-marker-alt"></i><span>2 miles  away</span></div>
+                    </div>
+                    <div class="column has-text-centered flex-end">
+                      <button class="button button_book">Book</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__links">
+            <div class="columns">
+              <div class="column">
+                <ul class="footer__links-list">
+                  <li><a href="#">How it works</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Mobile <sup>BETA</sup></a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="footer__links-list">
+                  <li><a href="#">Press inquiries</a></li>
+                  <li><a href="#">About us</a></li>
+                  <li><a href="#">BLOG</a></li>
+                </ul>
+              </div>
+              <div class="column">
+                <ul class="footer__links-list">
+                  <li><a href="#">Support</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li class="social"><a href="#"><i class="fab fa-instagram"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bot">
+            <div class="copy">© 2019 AKO Services Inc.</div>
+            <div class="bot-links"><a href="#">Terms of Use</a><a href="#">Privacy Policy</a></div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
